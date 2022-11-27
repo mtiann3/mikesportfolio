@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mikeiannotti55.github.io/mikesportfolio",
+  "homepage": "https://mikeiannotti55.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,10 +11,10 @@
     "env-cmd": "^10.1.0",
     "postcss": "^8.4.8",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-icons": "^4.6.0",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^6.4.3",
+"react-dom": "^16.13.1",
+"react-router": "^5.2.0",
+"react-router-dom": "^5.2.0",
+    "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.8",
     "tailwindcss": "^3.1.6",
