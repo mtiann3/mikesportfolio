@@ -28,8 +28,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "build:staging": "env-cmd -f .env.staging npm run build",
-    "publish": "subpath-as-branch --path dist --branch master"
+    "build:staging": "env-cmd -f .env.staging npm run build"
+    
   },
   "eslintConfig": {
     "extends": [
