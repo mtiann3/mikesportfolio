@@ -11,9 +11,9 @@
     "env-cmd": "^10.1.0",
     "postcss": "^8.4.8",
     "react": "^16.13.1",
-"react-dom": "^16.13.1",
-"react-router": "^5.2.0",
-"react-router-dom": "^5.2.0",
+    "react-dom": "^16.13.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.8",
@@ -28,7 +28,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b master -d build",
-    "build:staging": "env-cmd -f .env.staging npm run build"
+    "build:staging": "env-cmd -f .env.staging npm run build",
+    "publish": "subpath-as-branch --path dist --branch master"
   },
   "eslintConfig": {
     "extends": [
