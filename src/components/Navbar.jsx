@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href='/mikesportfolio/'>Home</a>
         </li>
         <li className='py-6 text-4xl'>
-          <a href='/mikesportfolio/contact'>About</a>
+          <a href='/mikesportfolio/about'>About</a>
         </li>
         <li className='py-6 text-4xl'
         ><a href='/mikesportfolio/skills'>Skills</a>
