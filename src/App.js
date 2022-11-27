@@ -11,11 +11,11 @@ function App() {
     <div>
       <Navbar />
       <Routes>
-        <Route path="/mikesportfolio" element={<Home/>}/>
-        <Route path="/mikesportfolio/about" element={<About/>}/>
-        <Route path="/mikesportfolio/skills" element={<Skills/>}/>
-        <Route path="//mikesportfolio/work" element={<Work/>}/>
-        <Route path="/mikesportfolio/contact" element={<Contact/>}/>
+        <Route path="https://mikeiannotti55.github.io/mikesportfolio" element={<Home/>}/>
+        <Route path="https://mikeiannotti55.github.io/mikesportfolio/about" element={<About/>}/>
+        <Route path="https://mikeiannotti55.github.io/mikesportfolio/skills" element={<Skills/>}/>
+        <Route path="https://mikeiannotti55.github.io/mikesportfolio/work" element={<Work/>}/>
+        <Route path="https://mikeiannotti55.github.io/mikesportfolio/contact" element={<Contact/>}/>
       </Routes>
       </div>
   );
