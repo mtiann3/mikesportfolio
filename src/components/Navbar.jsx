@@ -24,19 +24,19 @@ const Navbar = () => {
       {/* Menu */}
       <ul className='px-10 hidden md:flex'>
         <li>
-          <a href='/'>Home</a>
+          <a href='/mikesportfolio/'>Home</a>
         </li>
         <li>
-          <a href='/about'>About</a>
+          <a href='/mikesportfolio/about'>About</a>
         </li>
         <li>
-          <a href='/skills'>Skills</a>
+          <a href='/mikesportfolio/skills'>Skills</a>
         </li>
         <li>
-          <a href='/work'>Work</a>
+          <a href='/mikesportfolio/work'>Work</a>
         </li>
         <li>
-          <a href='/contact'>Contact</a>
+          <a href='/mikesportfolio/contact'>Contact</a>
         </li>
       </ul>
 
@@ -48,19 +48,19 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <ul className={!nav ? 'hidden ' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
         <li className='py-6 text-4xl'>
-          <a href='/'>Home</a>
+          <a href='/mikesportfolio/'>Home</a>
         </li>
         <li className='py-6 text-4xl'>
-          <a href='/about'>About</a>
+          <a href='/mikesportfolio/contact'>About</a>
         </li>
         <li className='py-6 text-4xl'
-        ><a href='/skills'>Skills</a>
+        ><a href='/mikesportfolio/skills'>Skills</a>
         </li>
         <li className='py-6 text-4xl'>
-          <a href='/work'>Work</a>
+          <a href='/mikesportfolio/work'>Work</a>
         </li>
         <li className='py-6 text-4xl'>
-          <a href='/contact'>Contact</a>
+          <a href='/mikesportfolio/contact'>Contact</a>
         </li>
       </ul>
 
