@@ -12,10 +12,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="https://mikeiannotti55.github.io/mikesportfolio" element={<Home/>}/>
-        <Route path="https://mikeiannotti55.github.io/mikesportfolio/about" element={<About/>}/>
-        <Route path="https://mikeiannotti55.github.io/mikesportfolio/skills" element={<Skills/>}/>
-        <Route path="https://mikeiannotti55.github.io/mikesportfolio/work" element={<Work/>}/>
-        <Route path="https://mikeiannotti55.github.io/mikesportfolio/contact" element={<Contact/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/skills" element={<Skills/>}/>
+        <Route path="/work" element={<Work/>}/>
+        <Route path="/contact" element={<Contact/>}/>
       </Routes>
       </div>
   );
