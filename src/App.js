@@ -10,13 +10,11 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path="/mikesportfolio/" element={<Home/>}/>
-        <Route path="/mikesportfolio/about" element={<About/>}/>
-        <Route path="/mikesportfolio/skills" element={<Skills/>}/>
-        <Route path="/mikesportfolio/work" element={<Work/>}/>
-        <Route path="/mikesportfolio/contact" element={<Contact/>}/>
-      </Routes>
+        <Home/>
+        <About/>
+        <Skills/>
+        <Work/>
+        <Contact/>
       </div>
   );
 }
