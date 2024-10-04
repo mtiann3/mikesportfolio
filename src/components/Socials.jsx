@@ -2,6 +2,8 @@ import React from "react";
 import Linkedin2 from "../assets/linkedin2.png";
 import Github from "../assets/github.png";
 import Resume from "../assets/resume2.jpg";
+import ResumePDF from "../assets/myResume.pdf";
+
 import Leetcode2 from "../assets/leetcode2.jpeg";
 
 const Socials = () => {
@@ -41,11 +43,14 @@ const Socials = () => {
             {/* <p className="my-4">JAVASCRIPT</p> */}
           </div>
           <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href={Resume} download="MikeIannotiResume.pdf">
-              <img className="w-20 mx-auto" src={Resume} alt="HTML icon" />
-            </a>
-            {/* <p className="my-4">RESUME</p> */}
-          </div>
+  <a href={ResumePDF} download="MikeIannottiResume.pdf">
+    <div className="flex flex-col items-center">
+      <img className="w-20" src={Resume} alt="Resume" />
+      {/* <p className="my-4 text-white">Download Resume</p> */}
+    </div>
+  </a>
+</div>
+
         </div>
       </div>
     </div>

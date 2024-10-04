@@ -226,7 +226,7 @@ const Navbar = () => {
             <a
               className="flex justify-between items-center w-full text-gray-300"
               href={Resume}
-              download="MikeIannotiResume.pdf"
+              download="MikeIannottiResume.pdf"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
