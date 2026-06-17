@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.3cc95bd3.css",
-    "main.js": "/static/js/main.242905a5.js",
+    "main.js": "/static/js/main.712bad3c.js",
     "static/media/athleteiq.png": "/static/media/athleteiq.3008e10aaadba2088a92.png",
     "static/media/app1.png": "/static/media/app1.b831ef2f3e76a11f6a1e.png",
+    "static/media/Mike Iannotti Resume.pdf": "/static/media/Mike Iannotti Resume.5a5a4917977e2332d50d.pdf",
     "static/media/cpp2.png": "/static/media/cpp2.904c659a2c4e76605892.png",
     "static/media/logo3.png": "/static/media/logo3.56cfa4a9c19a9f4bba48.png",
-    "static/media/myResume.pdf": "/static/media/myResume.9d2f3175f6126470cca3.pdf",
     "static/media/extracurriculars.png": "/static/media/extracurriculars.70d52c2b95985056718f.png",
     "static/media/academics.png": "/static/media/academics.42b24cc93c57b8a18fa9.png",
     "static/media/react.png": "/static/media/react.0cf951a69d8e58f83f9d.png",
@@ -26,10 +26,10 @@
     "static/media/java2.png": "/static/media/java2.6c64373d3b7415758078.png",
     "index.html": "/index.html",
     "main.3cc95bd3.css.map": "/static/css/main.3cc95bd3.css.map",
-    "main.242905a5.js.map": "/static/js/main.242905a5.js.map"
+    "main.712bad3c.js.map": "/static/js/main.712bad3c.js.map"
   },
   "entrypoints": [
     "static/css/main.3cc95bd3.css",
-    "static/js/main.242905a5.js"
+    "static/js/main.712bad3c.js"
   ]
 }
