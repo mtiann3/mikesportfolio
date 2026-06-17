@@ -43,14 +43,13 @@ const Socials = () => {
             {/* <p className="my-4">JAVASCRIPT</p> */}
           </div>
           <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-  <a href={ResumePDF} download="MikeIannottiResume.pdf">
-    <div className="flex flex-col items-center">
-      <img className="w-20" src={Resume} alt="Resume" />
-      {/* <p className="my-4 text-white">Download Resume</p> */}
-    </div>
-  </a>
-</div>
-
+            <a href={ResumePDF} download="MikeIannottiResume.pdf">
+              <div className="flex flex-col items-center">
+                <img className="w-20" src={Resume} alt="Resume" />
+                {/* <p className="my-4 text-white">Download Resume</p> */}
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

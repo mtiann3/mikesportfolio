@@ -6,20 +6,46 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Socials from "./components/Socials";
 import Work from "./components/Work";
-import {Routes, Route} from 'react-router-dom'
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#0a192f] text-gray-300">
+
       <Navbar />
-        <Home/>
-        <About/>
-        <Skills/>
-        <Projects/>
-        <Work/>
-        <Socials/>
-        <Contact/>
+
+      {/* prevents navbar overlap */}
+      <div className="pt-[80px]">
+
+        <section id="home">
+          <Home />
+        </section>
+
+        <section id="about">
+          <About />
+        </section>
+
+        <section id="skills">
+          <Skills />
+        </section>
+
+        <section id="projects">
+          <Projects />
+        </section>
+
+        <section id="work">
+          <Work />
+        </section>
+
+        <section id="socials">
+          <Socials />
+        </section>
+
+        <section id="contact">
+          <Contact />
+        </section>
+
       </div>
+    </div>
   );
 }
 
