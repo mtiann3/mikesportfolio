@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div name="about" className="w-full h-screen bg-[#0a192f] text-gray-300">
+    <div name="about" className="w-full h-screen bg-none text-gray-300">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full  grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -17,7 +17,7 @@ const About = () => {
             <p>Hi, I'm Mike. Thanks for visiting my portfolio.</p>
           </div>
           <div>
-            <p>
+            <p className="font-bold">
              I am a junior at Elmhurst University pursuing a Bachelor’s degree in Accounting with a minor in Computer Science. Prior to transferring, I attended Harper College, where I built a strong foundation in business and technology and earned an Associate of Arts degree.
               <br />
               <br />

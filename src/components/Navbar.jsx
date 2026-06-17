@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-none text-gray-300 z-50">
 
       {/* LOGO */}
       <Link to="home" {...linkProps}>
@@ -27,7 +27,7 @@ const Navbar = () => {
       </Link>
 
       {/* DESKTOP MENU (NO SOCIALS HERE) */}
-      <ul className="hidden md:flex gap-6">
+      <ul className="hidden font-bold md:flex gap-6">
         <li><Link to="home" {...linkProps}>Home</Link></li>
         <li><Link to="about" {...linkProps}>About</Link></li>
         <li><Link to="skills" {...linkProps}>Skills</Link></li>

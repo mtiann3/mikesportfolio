@@ -9,7 +9,7 @@ const Work = () => {
     <div
       id="work"
       name="work"
-      className="w-full min-h-screen text-gray-300 bg-[#0a192f] py-16 scroll-mt-24"
+      className="w-full min-h-screen text-gray-300 bg-none py-16 scroll-mt-24"
     >
       <div className="max-w-[1000px] mx-auto px-4">
 

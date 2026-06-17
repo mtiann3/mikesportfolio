@@ -10,7 +10,7 @@ const Socials = () => {
   return (
     <div
       name="socials"
-      className="md:hidden w-full h-full bg-[#0a192f] text-gray-300"
+      className="md:hidden w-full h-full bg-none text-gray-300"
     >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">

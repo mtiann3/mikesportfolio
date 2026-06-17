@@ -6,44 +6,50 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Socials from "./components/Socials";
 import Work from "./components/Work";
+import Chicago from "./assets/chicago.jpg";
 
 function App() {
   return (
-    <div className="bg-[#0a192f] text-gray-300">
+    <div
+      className="text-gray-300 min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
+      style={{ backgroundImage: `url(${Chicago})` }}
+    >
+      {/* overlay for readability */}
+      <div className="min-h-screen bg-black/60">
+        
+        <Navbar />
 
-      <Navbar />
+        <div className="pt-[80px]">
+          
+          <section id="home">
+            <Home />
+          </section>
 
-      {/* prevents navbar overlap */}
-      <div className="pt-[80px]">
+          <section id="about">
+            <About />
+          </section>
 
-        <section id="home">
-          <Home />
-        </section>
+          <section id="skills">
+            <Skills />
+          </section>
 
-        <section id="about">
-          <About />
-        </section>
+          <section id="projects">
+            <Projects />
+          </section>
 
-        <section id="skills">
-          <Skills />
-        </section>
+          <section id="work">
+            <Work />
+          </section>
 
-        <section id="projects">
-          <Projects />
-        </section>
+          <section id="socials">
+            <Socials />
+          </section>
 
-        <section id="work">
-          <Work />
-        </section>
+          <section id="contact">
+            <Contact />
+          </section>
 
-        <section id="socials">
-          <Socials />
-        </section>
-
-        <section id="contact">
-          <Contact />
-        </section>
-
+        </div>
       </div>
     </div>
   );
