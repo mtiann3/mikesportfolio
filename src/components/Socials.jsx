@@ -2,7 +2,7 @@ import React from "react";
 import Linkedin2 from "../assets/linkedin2.png";
 import Github from "../assets/github.png";
 import Resume from "../assets/resume2.jpg";
-import ResumePDF from "../assets/myResume.pdf";
+import ResumePDF from "../assets/Mike Iannotti Resume.pdf";
 
 import Leetcode2 from "../assets/leetcode2.jpeg";
 
@@ -24,7 +24,7 @@ const Socials = () => {
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
           <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href="https://www.linkedin.com/in/mike-iannotti-70b447258">
+            <a href="https://www.linkedin.com/in/michael-iannotti-5a9043417">
               <img className="w-20 mx-auto" src={Linkedin2} alt="HTML icon" />
             </a>
 

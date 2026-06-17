@@ -12,7 +12,7 @@ import { SiGmail } from "react-icons/si";
 import Logo from "../assets/logo1.png";
 import Logo2 from "../assets/logo2.png";
 import Logo3 from "../assets/logo3.png";
-import Resume from "../assets/myResume.pdf";
+import Resume from "../assets/Mike Iannotti Resume.pdf";
 import { Link } from "react-scroll";
 import { SiLeetcode } from "react-icons/si";
 
@@ -200,7 +200,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#FFFFFF]  ">
             <a
               className="flex justify-between items-center w-full text-[#0077B5]"
-              href="https://www.linkedin.com/in/mike-iannotti-70b447258/"
+              href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
