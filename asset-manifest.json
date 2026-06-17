@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/mikesportfolio/static/css/main.1ba82be7.css",
-    "main.js": "/mikesportfolio/static/js/main.86ac920e.js",
+    "main.css": "/mikesportfolio/static/css/main.f527b929.css",
+    "main.js": "/mikesportfolio/static/js/main.1335bb77.js",
+    "static/media/IMG_2216.PNG": "/mikesportfolio/static/media/IMG_2216.44a3e46a3d131a8c7f8f.PNG",
+    "static/media/chicago.jpg": "/mikesportfolio/static/media/chicago.443e4c79a6b8c3f1ee12.jpg",
     "static/media/athleteiq.png": "/mikesportfolio/static/media/athleteiq.3008e10aaadba2088a92.png",
     "static/media/app1.png": "/mikesportfolio/static/media/app1.b831ef2f3e76a11f6a1e.png",
     "static/media/Mike Iannotti Resume.pdf": "/mikesportfolio/static/media/Mike Iannotti Resume.5a5a4917977e2332d50d.pdf",
@@ -14,11 +16,11 @@
     "static/media/resume2.jpg": "/mikesportfolio/static/media/resume2.c1cfbc818d2b1ba7f06c.jpg",
     "static/media/linkedin2.png": "/mikesportfolio/static/media/linkedin2.68ac41e1459436bfd38f.png",
     "index.html": "/mikesportfolio/index.html",
-    "main.1ba82be7.css.map": "/mikesportfolio/static/css/main.1ba82be7.css.map",
-    "main.86ac920e.js.map": "/mikesportfolio/static/js/main.86ac920e.js.map"
+    "main.f527b929.css.map": "/mikesportfolio/static/css/main.f527b929.css.map",
+    "main.1335bb77.js.map": "/mikesportfolio/static/js/main.1335bb77.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ba82be7.css",
-    "static/js/main.86ac920e.js"
+    "static/css/main.f527b929.css",
+    "static/js/main.1335bb77.js"
   ]
 }
