@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mikesportfolio/static/css/main.f527b929.css",
-    "main.js": "/mikesportfolio/static/js/main.1335bb77.js",
+    "main.css": "/mikesportfolio/static/css/main.0a91b621.css",
+    "main.js": "/mikesportfolio/static/js/main.7ff0eb5e.js",
     "static/media/IMG_2216.PNG": "/mikesportfolio/static/media/IMG_2216.44a3e46a3d131a8c7f8f.PNG",
     "static/media/chicago.jpg": "/mikesportfolio/static/media/chicago.443e4c79a6b8c3f1ee12.jpg",
     "static/media/athleteiq.png": "/mikesportfolio/static/media/athleteiq.3008e10aaadba2088a92.png",
@@ -16,11 +16,11 @@
     "static/media/resume2.jpg": "/mikesportfolio/static/media/resume2.c1cfbc818d2b1ba7f06c.jpg",
     "static/media/linkedin2.png": "/mikesportfolio/static/media/linkedin2.68ac41e1459436bfd38f.png",
     "index.html": "/mikesportfolio/index.html",
-    "main.f527b929.css.map": "/mikesportfolio/static/css/main.f527b929.css.map",
-    "main.1335bb77.js.map": "/mikesportfolio/static/js/main.1335bb77.js.map"
+    "main.0a91b621.css.map": "/mikesportfolio/static/css/main.0a91b621.css.map",
+    "main.7ff0eb5e.js.map": "/mikesportfolio/static/js/main.7ff0eb5e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f527b929.css",
-    "static/js/main.1335bb77.js"
+    "static/css/main.0a91b621.css",
+    "static/js/main.7ff0eb5e.js"
   ]
 }
