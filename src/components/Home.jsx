@@ -19,7 +19,7 @@ const Home = () => {
             Michael Iannotti
           </h1>
 
-          <h2 className="text-xl sm:text-2xl font-bold text-[#8892b0]">
+          <h2 className="text-xl sm:text-2xl font-bold text-[#99b3ff]">
             Accounting Student | Computer Science Minor | SDR Intern at Cyera
           </h2>
 
