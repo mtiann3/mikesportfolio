@@ -14,13 +14,13 @@ const Skills = () => {
             Skills
           </p>
 
-          <p className="py-4 text-gray-400">
+          <p className="py-4 font-bold text-gray-300">
             Accounting, business, and technical skills developed through coursework and work experience
           </p>
         </div>
 
         {/* GRID */}
-        <div className="space-y-10">
+        <div className=" space-y-10">
 
           <Section title="Accounting & Finance">
             <Skill title="Financial Accounting" />
@@ -89,7 +89,8 @@ const Skill = ({ title }) => {
         flex items-center justify-center
         text-center
         min-h-[80px]
-
+        bg-opacity-75
+        
         transition-all duration-300 ease-in-out
 
         hover:scale-105

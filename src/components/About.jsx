@@ -28,8 +28,7 @@ const About = () => {
               and technology-driven business solutions.
               <br />
               <br />
-              Outside of academics and work, I enjoy following sports, staying
-              active, and exploring new technologies and industry trends.
+              Outside of academics and work, I enjoy working out, traveling, and exploring new technologies and industry trends. I also train and compete in Jiu Jitsu. 
             </p>
           </div>
         </div>

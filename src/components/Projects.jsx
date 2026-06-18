@@ -19,7 +19,7 @@ const Projects = () => {
             Projects
           </p>
 
-          <p className="py-4 text-gray-400">
+          <p className="py-4 font-bold text-gray-300">
             Software projects focused on mobile development, AI, and computer vision. Currently expanding into business and accounting applications.
           </p>
         </div>
@@ -30,7 +30,8 @@ const Projects = () => {
             Featured Project
           </h2>
 
-          <div className="bg-[#0d213e] shadow-lg shadow-[#040c16] rounded-md p-6 flex flex-col md:flex-row gap-6 items-center">
+          <div className="bg-[#0d213e] bg-opacity-75
+        font-bold shadow-lg shadow-[#040c16] rounded-md p-6 flex flex-col md:flex-row gap-6 items-center">
 
             <img
               src={dinorun}
@@ -95,7 +96,8 @@ const Projects = () => {
         </div>
 
         {/* CAREER DIRECTION (IMPORTANT ADDITION) */}
-        <div className="mt-16 bg-[#0d213e] p-6 rounded-md shadow-lg shadow-[#040c16]">
+        <div className="mt-16 bg-opacity-75
+        font-bold bg-[#0d213e] p-6 rounded-md shadow-lg shadow-[#040c16]">
           <h2 className="text-white text-lg font-bold mb-3">
             Current Focus
           </h2>
@@ -114,7 +116,8 @@ const Projects = () => {
 /* PROJECT CARD */
 const ProjectCard = ({ img, title, desc, tech, link }) => {
   return (
-    <div className="bg-[#0d213e] shadow-md shadow-[#040c16] rounded-md p-5 flex flex-col items-center text-center hover:scale-[1.03] duration-300">
+    <div className="bg-[#0d213e] bg-opacity-75
+        font-bold shadow-md shadow-[#040c16] rounded-md p-5 flex flex-col items-center text-center hover:scale-[1.03] duration-300">
 
       <img src={img} alt={title} className="h-28 object-contain mb-4" />
 
