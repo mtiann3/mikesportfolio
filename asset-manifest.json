@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/mikesportfolio/static/css/main.1576448b.css",
-    "main.js": "/mikesportfolio/static/js/main.3dc20546.js",
-    "static/media/IMG_2216.PNG": "/mikesportfolio/static/media/IMG_2216.44a3e46a3d131a8c7f8f.PNG",
-    "static/media/chicago.jpg": "/mikesportfolio/static/media/chicago.443e4c79a6b8c3f1ee12.jpg",
-    "static/media/athleteiq.png": "/mikesportfolio/static/media/athleteiq.3008e10aaadba2088a92.png",
-    "static/media/app1.png": "/mikesportfolio/static/media/app1.b831ef2f3e76a11f6a1e.png",
-    "static/media/Mike Iannotti Resume.pdf": "/mikesportfolio/static/media/Mike Iannotti Resume.5a5a4917977e2332d50d.pdf",
-    "static/media/logo3.png": "/mikesportfolio/static/media/logo3.56cfa4a9c19a9f4bba48.png",
-    "static/media/extracurriculars.png": "/mikesportfolio/static/media/extracurriculars.70d52c2b95985056718f.png",
-    "static/media/academics.png": "/mikesportfolio/static/media/academics.42b24cc93c57b8a18fa9.png",
-    "static/media/work.png": "/mikesportfolio/static/media/work.053b372ccf77900fae43.png",
-    "static/media/experience.png": "/mikesportfolio/static/media/experience.d4786743d48871b69d06.png",
-    "static/media/github.png": "/mikesportfolio/static/media/github.3b9e32903aa89111875d.png",
-    "static/media/resume2.jpg": "/mikesportfolio/static/media/resume2.c1cfbc818d2b1ba7f06c.jpg",
-    "static/media/linkedin2.png": "/mikesportfolio/static/media/linkedin2.68ac41e1459436bfd38f.png",
-    "index.html": "/mikesportfolio/index.html",
-    "main.1576448b.css.map": "/mikesportfolio/static/css/main.1576448b.css.map",
-    "main.3dc20546.js.map": "/mikesportfolio/static/js/main.3dc20546.js.map"
+    "main.css": "/static/css/main.1576448b.css",
+    "main.js": "/static/js/main.a91a412c.js",
+    "static/media/IMG_2216.PNG": "/static/media/IMG_2216.44a3e46a3d131a8c7f8f.PNG",
+    "static/media/chicago.jpg": "/static/media/chicago.443e4c79a6b8c3f1ee12.jpg",
+    "static/media/athleteiq.png": "/static/media/athleteiq.3008e10aaadba2088a92.png",
+    "static/media/app1.png": "/static/media/app1.b831ef2f3e76a11f6a1e.png",
+    "static/media/Mike Iannotti Resume.pdf": "/static/media/Mike Iannotti Resume.5a5a4917977e2332d50d.pdf",
+    "static/media/logo3.png": "/static/media/logo3.56cfa4a9c19a9f4bba48.png",
+    "static/media/extracurriculars.png": "/static/media/extracurriculars.70d52c2b95985056718f.png",
+    "static/media/academics.png": "/static/media/academics.42b24cc93c57b8a18fa9.png",
+    "static/media/work.png": "/static/media/work.053b372ccf77900fae43.png",
+    "static/media/experience.png": "/static/media/experience.d4786743d48871b69d06.png",
+    "static/media/github.png": "/static/media/github.3b9e32903aa89111875d.png",
+    "static/media/resume2.jpg": "/static/media/resume2.c1cfbc818d2b1ba7f06c.jpg",
+    "static/media/linkedin2.png": "/static/media/linkedin2.68ac41e1459436bfd38f.png",
+    "index.html": "/index.html",
+    "main.1576448b.css.map": "/static/css/main.1576448b.css.map",
+    "main.a91a412c.js.map": "/static/js/main.a91a412c.js.map"
   },
   "entrypoints": [
     "static/css/main.1576448b.css",
-    "static/js/main.3dc20546.js"
+    "static/js/main.a91a412c.js"
   ]
 }
