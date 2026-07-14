@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+} from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import { SiLeetcode } from "react-icons/si";
+// import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-scroll";
 
 import Logo3 from "../assets/logo3.png";
@@ -38,8 +44,18 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="skills" {...linkProps}>
-            Skills
+          <Link to="focus" {...linkProps}>
+            Focus
+          </Link>
+        </li>
+        <li>
+          <Link to="experience" {...linkProps}>
+            Experience
+          </Link>
+        </li>
+        <li>
+          <Link to="education" {...linkProps}>
+            Education
           </Link>
         </li>
         <li>
@@ -48,10 +64,11 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="work" {...linkProps}>
-            Experience
+          <Link to="skills" {...linkProps}>
+            Skills
           </Link>
         </li>
+{/* reume component here */}
         <li>
           <Link to="contact" {...linkProps}>
             Contact
@@ -83,6 +100,26 @@ const Navbar = () => {
             About
           </Link>
         </li>
+        <li className="py-6 text-3xl cursor-pointer">
+          <Link to="focus" {...linkProps} onClick={handleClick}>
+            Professional Focus
+          </Link>
+        </li>
+          <li className="py-6 text-3xl cursor-pointer">
+          <Link to="experience" {...linkProps} onClick={handleClick}>
+            Experience
+          </Link>
+        </li>
+          <li className="py-6 text-3xl cursor-pointer">
+          <Link to="education" {...linkProps} onClick={handleClick}>
+            Education
+          </Link>
+        </li>
+         <li className="py-6 text-3xl cursor-pointer">
+          <Link to="projects" {...linkProps} onClick={handleClick}>
+            Projects
+          </Link>
+        </li>
 
         <li className="py-6 text-3xl cursor-pointer">
           <Link to="skills" {...linkProps} onClick={handleClick}>
@@ -90,65 +127,48 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="py-6 text-3xl cursor-pointer">
-          <Link to="projects" {...linkProps} onClick={handleClick}>
-            Projects
-          </Link>
-        </li>
+       
 
-        <li className="py-6 text-3xl cursor-pointer">
-          <Link to="work" {...linkProps} onClick={handleClick}>
-            Experience
-          </Link>
-        </li>
+      
 
         {/* SOCIALS ONLY MOBILE */}
-        <li className="py-6 text-3xl cursor-pointer">
-          <Link to="socials" {...linkProps} onClick={handleClick}>
-            Socials
-          </Link>
-        </li>
-
         <li className="py-6 text-3xl cursor-pointer">
           <Link to="contact" {...linkProps} onClick={handleClick}>
             Contact
           </Link>
         </li>
+
+        {/* <li className="py-6 text-3xl cursor-pointer">
+          <Link to="contact" {...linkProps} onClick={handleClick}>
+            Contact
+          </Link>
+        </li> */}
       </ul>
 
       {/* DESKTOP SOCIAL SIDEBAR (KEEP THIS) */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      {/* <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0077B5] w-[160px] h-[60px] flex items-center cursor-pointer">
             <a
               href="https://www.linkedin.com/in/michael-iannotti-5a9043417
 
 "
-              className="flex justify-between w-full px-2 text-white"
+              className="flex justify-between w-full px-1 text-white"
             >
               LinkedIn <FaLinkedin size={30} />
             </a>
           </li>
-
-          <li className="ml-[-100px] hover:ml-[-10px] duration-300 bg-black w-[160px] h-[60px] flex items-center cursor-pointer">
+          <li className="ml-[-120px] hover:ml-0 duration-300 bg-[#D44638] px-2 w-[180px] h-[60px] flex items-center cursor-pointer">
             <a
-              href="https://leetcode.com/mtiann3"
-              className="flex justify-between w-full px-2 text-white"
+              href="mailto:miannotti06@gmail.com"
+              className="flex justify-between items-center w-full h-full px-3 text-white"
             >
-              LeetCode <SiLeetcode size={30} />
+              <span>Email</span>
+              <FaEnvelope size={30} />
             </a>
           </li>
 
-          <li className="ml-[-100px] hover:ml-[-10px] duration-300 bg-white w-[160px] h-[60px] flex items-center cursor-pointer">
-            <a
-              href="https://github.com/mtiann3"
-              className="flex justify-between w-full px-2 text-black"
-            >
-              GitHub <FaGithub size={30} />
-            </a>
-          </li>
-
-          <li className="ml-[-100px] hover:ml-[-10px] duration-300 bg-gray-600 w-[160px] h-[60px] flex items-center cursor-pointer">
+          <li className="ml-[-100px] hover:ml-[-10px] duration-300 px-2 bg-gray-600 w-[160px] h-[60px] flex items-center cursor-pointer">
             <a
               href={Resume}
               download
@@ -157,8 +177,9 @@ const Navbar = () => {
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
-        </ul>
-      </div>
+          {/* Add email button */}
+        {/* </ul>
+      </div> */} 
     </div>
   );
 };

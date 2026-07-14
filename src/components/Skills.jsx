@@ -7,7 +7,6 @@ const Skills = () => {
       className="w-full min-h-screen bg-none text-gray-300 py-16"
     >
       <div className="max-w-[1000px] mx-auto px-4">
-
         {/* HEADER */}
         <div className="mb-10">
           <p className="text-4xl font-bold inline border-b-4 border-red-600">
@@ -15,45 +14,48 @@ const Skills = () => {
           </p>
 
           <p className="py-4 font-bold text-gray-300">
-            Accounting, business, and technical skills developed through coursework and work experience
+            Accounting, business, and technical skills developed through
+            coursework and work experience
           </p>
         </div>
 
         {/* GRID */}
         <div className=" space-y-10">
-
-          <Section title="Accounting & Finance">
-            <Skill title="Financial Accounting" />
+          <Section title="Financial Planning & Business Foundation">
+            <Skill title="Accounting Fundamentals" />
+            <Skill title="Financial Analysis" />
             <Skill title="Financial Statement Analysis" />
-            <Skill title="CPA Track (Exploring)" />
-            <Skill title="Business Communication" />
+            <Skill title="Business Law Coursework" />
+            <Skill title="Economics Coursework" />
+            <Skill title="Tax-Aware Planning Interest" />
           </Section>
 
-          <Section title="Business & Sales Experience">
-            <Skill title="SDR Intern Experience" />
-            <Skill title="Salesforce CRM" />
-            <Skill title="Lead Generation & Prospecting" />
-            <Skill title="Cold Outreach (Email & LinkedIn)" />
+          <Section title="Client Service & Communication">
             <Skill title="Client Communication" />
-            <Skill title="Pipeline Management" />
+            <Skill title="Account Research" />
+            <Skill title="Prospect Research" />
+            <Skill title="Business Communication" />
+            <Skill title="Customer Service" />
+            <Skill title="Professional Follow-Up" />
           </Section>
 
-          <Section title="Programming & Technical Skills">
+          <Section title="Technical & Analytical Tools">
+            <Skill title="Microsoft Excel" />
+            <Skill title="Microsoft Word" />
+            <Skill title="Microsoft PowerPoint" />
             <Skill title="Python" />
-            <Skill title="Java" />
-            <Skill title="Excel (Intermediate)" />
-            <Skill title="GitHub" />
-            <Skill title="VS Code" />
+            <Skill title="JavaScript" />
+            <Skill title="React" />
           </Section>
 
-          <Section title="Software & Tools Used">
+          <Section title="Professional Tools">
             <Skill title="Salesforce" />
-            <Skill title="Slack" />
             <Skill title="Google Workspace" />
-            <Skill title="LinkedIn Sales Navigator" />
-            <Skill title="AI Tools (Claude)" />
+            <Skill title="Slack" />
+            <Skill title="Data Organization" />
+            <Skill title="Research Workflows" />
+            <Skill title="AI Tools" />
           </Section>
-
         </div>
       </div>
     </div>
@@ -66,9 +68,7 @@ export default Skills;
 const Section = ({ title, children }) => {
   return (
     <div>
-      <h2 className="text-xl font-semibold text-white mb-4">
-        {title}
-      </h2>
+      <h2 className="text-xl font-semibold text-white mb-4">{title}</h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
         {children}
@@ -101,9 +101,7 @@ const Skill = ({ title }) => {
         cursor-pointer
       "
     >
-      <p className="text-sm sm:text-base text-gray-200">
-        {title}
-      </p>
+      <p className="text-sm sm:text-base text-gray-200">{title}</p>
     </div>
   );
 };

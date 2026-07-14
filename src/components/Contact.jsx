@@ -1,20 +1,91 @@
-import React from 'react'
+import React from "react";
+import Linkedin2 from "../assets/linkedin2.png";
+import Resume from "../assets/resume2.jpg";
+import ResumePDF from "../assets/Mike Iannotti Resume.pdf";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <div name='contact' className='w-full h-screen bg-none flex justify-center items-center p-4'>
-        <form method='POST' action="https://getform.io/f/1df1c675-fe6a-43f9-b287-66c4625314e7" className='flex flex-col max-w-[600px] w-full'>
-            <div className='pb-8'>
-                <p className='text-4xl font-bold inline border-b-4 border-red-600 text-gray-300'>Contact</p>
-                <p className='text-gray-300 py-4 font-bold'>Submit the form below or shoot me an email at miannotti06@gmail.com</p>
-            </div>
-            <input className='bg-[#0d213e] bg-opacity-75 p-2 ' type="text" placeholder='Name' name='name'/>
-            <input className='my-4 p-2 bg-[#0d213e] bg-opacity-75' type="text" placeholder='Email' name='email'/>
-            <textarea className='bg-[#0d213e] p-2 bg-opacity-75'  name='message' rows="10" placeholder='Message'></textarea>
-            <button className='text-white border-2 hover:bg-red-600 hover:border-red-600 px-4 py-3 my-8 mx-auto items-center'>Let's Collaborate</button>
-        </form>
-    </div>
-  )
-}
+    <section
+      name="contact"
+      className="w-full  text-gray-300 py-20"
+    >
+      <div className="max-w-[900px] mx-auto px-6">
+        {/* Heading */}
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold inline border-b-4 border-red-600">
+            Contact
+          </h2>
+          <p className="mt-4 text-gray-400 max-w-lg">
+            Feel free to connect with me professionally, download my resume, or
+            reach out by email.
+          </p>
+        </div>
 
-export default Contact
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <img
+              src={Linkedin2}
+              alt="LinkedIn"
+              className="w-20 h-20 object-contain"
+            />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              LinkedIn
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              View my professional profile and connect with me.
+            </p>
+          </a>
+
+          {/* Resume */}
+          <a
+            href={ResumePDF}
+            download="MikeIannottiResume.pdf"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <img
+              src={Resume}
+              alt="Resume"
+              className="w-20 h-20 object-contain"
+            />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              Resume
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              Download a copy of my resume in PDF format.
+            </p>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:miannotti06@gmail.com"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <MdEmail size={72} className="text-white" />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              Email
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              Have a question or opportunity? I'd be happy to hear from you.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Contact;

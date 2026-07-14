@@ -1,58 +1,90 @@
 import React from "react";
 import Linkedin2 from "../assets/linkedin2.png";
-import Github from "../assets/github.png";
 import Resume from "../assets/resume2.jpg";
 import ResumePDF from "../assets/Mike Iannotti Resume.pdf";
-
-import Leetcode2 from "../assets/leetcode2.jpeg";
+import { MdEmail } from "react-icons/md";
 
 const Socials = () => {
   return (
-    <div
+    <section
       name="socials"
-      className="md:hidden w-full h-full bg-none text-gray-300"
+      className="w-full  text-gray-300 py-20"
     >
-      {/* Container */}
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div>
-          <p className="text-4xl font-bold inline border-b-4 border-red-600  ">
-            Socials
-          </p>
-          <p className="py-4">
-            // Check out my socials to see what else I have been up to.
+      <div className="max-w-[900px] mx-auto px-6">
+        {/* Heading */}
+        <div className="mb-12">
+          <h2 className="text-4xl font-bold inline border-b-4 border-red-600">
+            Contact
+          </h2>
+          <p className="mt-4 text-gray-400 max-w-lg">
+            Feel free to connect with me professionally, download my resume, or
+            reach out by email.
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
-          <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href="https://www.linkedin.com/in/michael-iannotti-5a9043417">
-              <img className="w-20 mx-auto" src={Linkedin2} alt="HTML icon" />
-            </a>
 
-            {/* <p className="my-4">HTML</p> */}
-          </div>
-          <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href="https://github.com/mtiann3">
-              <img className="w-20 mx-auto" src={Github} alt="HTML icon" />
-            </a>
-            {/* <p className="my-4">CSS</p> */}
-          </div>
-          <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href="https://leetcode.com/mtiann3">
-              <img className="w-20 mx-auto" src={Leetcode2} alt="HTML icon" />
-            </a>
-            {/* <p className="my-4">JAVASCRIPT</p> */}
-          </div>
-          <div className="bg-[#0d213e] shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-            <a href={ResumePDF} download="MikeIannottiResume.pdf">
-              <div className="flex flex-col items-center">
-                <img className="w-20" src={Resume} alt="Resume" />
-                {/* <p className="my-4 text-white">Download Resume</p> */}
-              </div>
-            </a>
-          </div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <img
+              src={Linkedin2}
+              alt="LinkedIn"
+              className="w-20 h-20 object-contain"
+            />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              LinkedIn
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              View my professional profile and connect with me.
+            </p>
+          </a>
+
+          {/* Resume */}
+          <a
+            href={ResumePDF}
+            download="MikeIannottiResume.pdf"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <img
+              src={Resume}
+              alt="Resume"
+              className="w-20 h-20 object-contain"
+            />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              Resume
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              Download a copy of my resume in PDF format.
+            </p>
+          </a>
+
+          {/* Email */}
+          <a
+            href="mailto:miannotti06@gmail.com"
+            className="bg-[#112240] rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+          >
+            <MdEmail size={72} className="text-white" />
+
+            <h3 className="mt-6 text-xl font-semibold text-white">
+              Email
+            </h3>
+
+            <p className="mt-2 text-sm text-gray-400">
+              Have a question or opportunity? I'd be happy to hear from you.
+            </p>
+          </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

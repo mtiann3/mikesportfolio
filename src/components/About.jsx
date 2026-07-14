@@ -14,21 +14,28 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-right text-4xl font-bold ">
-            <p>Hi, I'm Mike. Thanks for visiting my portfolio.</p>
+            <p>Building toward planning-first wealth management.</p>
           </div>
           <div>
-            <p className="font-bold">
-             I am a junior at Elmhurst University pursuing a Bachelor’s degree in Accounting with a minor in Computer Science. Prior to transferring, I attended Harper College, where I built a strong foundation in business and technology and earned an Associate of Arts degree.
+            <p className="font-medium leading-relaxed">
+              I am an accounting and finance student transferring to Elmhurst University
+              after earning my Associate in Arts from Harper College. My
+              long-term goal is to build a career in wealth management and
+              financial planning, with a focus on helping individuals, families,
+              and business owners make better financial decisions.
               <br />
               <br />
-              Currently, I am an SDR Intern at Cyera, gaining experience in
-              business development, communication, and the technology industry.
-              I am considering pursuing the CPA designation and a career in
-              accounting, with interests in financial analysis, data analytics,
-              and technology-driven business solutions.
+              I am especially interested in tax-aware planning, retirement
+              planning, investment education, and eventually building or
+              partnering in a planning-focused advisory business. My accounting
+              background, client-facing experience, and technical skills give me
+              a foundation to understand both the numbers and the people behind
+              them.
               <br />
               <br />
-              Outside of academics and work, I enjoy working out, traveling, and exploring new technologies and industry trends. I also train and compete in Jiu Jitsu. 
+              Outside of academics and work, I enjoy working out, traveling,
+              exploring new technologies, and training and competing in Jiu
+              Jitsu.
             </p>
           </div>
         </div>
