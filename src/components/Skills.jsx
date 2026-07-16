@@ -7,20 +7,23 @@ const Skills = () => {
       className="w-full min-h-screen bg-none text-gray-300 py-16"
     >
       <div className="max-w-[1000px] mx-auto px-4">
+
         {/* HEADER */}
         <div className="mb-10">
           <p className="text-4xl font-bold inline border-b-4 border-red-600">
             Skills
           </p>
 
-          <p className="py-4 font-bold text-gray-300">
+          <p className="py-4 font-medium text-gray-300">
             Accounting, business, and technical skills developed through
             coursework and work experience
           </p>
         </div>
 
-        {/* GRID */}
-        <div className=" space-y-10">
+
+        {/* SKILLS */}
+        <div className="space-y-10">
+
           <Section title="Financial Planning & Business Foundation">
             <Skill title="Accounting Fundamentals" />
             <Skill title="Financial Analysis" />
@@ -29,6 +32,7 @@ const Skills = () => {
             <Skill title="Economics Coursework" />
             <Skill title="Tax-Aware Planning Interest" />
           </Section>
+
 
           <Section title="Client Service & Communication">
             <Skill title="Client Communication" />
@@ -39,6 +43,7 @@ const Skills = () => {
             <Skill title="Professional Follow-Up" />
           </Section>
 
+
           <Section title="Technical & Analytical Tools">
             <Skill title="Microsoft Excel" />
             <Skill title="Microsoft Word" />
@@ -48,6 +53,7 @@ const Skills = () => {
             <Skill title="React" />
           </Section>
 
+
           <Section title="Professional Tools">
             <Skill title="Salesforce" />
             <Skill title="Google Workspace" />
@@ -56,6 +62,7 @@ const Skills = () => {
             <Skill title="Research Workflows" />
             <Skill title="AI Tools" />
           </Section>
+
         </div>
       </div>
     </div>
@@ -64,11 +71,14 @@ const Skills = () => {
 
 export default Skills;
 
+
 /* SECTION */
 const Section = ({ title, children }) => {
   return (
     <div>
-      <h2 className="text-xl font-semibold text-white mb-4">{title}</h2>
+      <h2 className="text-xl font-semibold text-white mb-4">
+        {title}
+      </h2>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
         {children}
@@ -77,31 +87,39 @@ const Section = ({ title, children }) => {
   );
 };
 
-/* SKILL CARD (ANIMATED) */
+
+/* SKILL CARD */
 const Skill = ({ title }) => {
   return (
     <div
       className="
-        bg-[#0d213e]
-        shadow-md shadow-[#040c16]
+        bg-slate-900/90
+        border
+        border-white/10
+        backdrop-blur-sm
+        shadow-lg
+        shadow-black/40
         rounded-md
         p-4
-        flex items-center justify-center
+        flex
+        items-center
+        justify-center
         text-center
         min-h-[80px]
-        bg-opacity-75
-        
-        transition-all duration-300 ease-in-out
+
+        transition
+        duration-300
 
         hover:scale-105
         hover:-translate-y-1
-        hover:shadow-lg
-        hover:shadow-red-500/20
-        hover:bg-[#112a4a]
+     
+
         cursor-pointer
       "
     >
-      <p className="text-sm sm:text-base text-gray-200">{title}</p>
+      <p className="text-sm sm:text-base text-slate-200 font-medium">
+        {title}
+      </p>
     </div>
   );
 };

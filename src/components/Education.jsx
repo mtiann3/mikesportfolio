@@ -1,8 +1,11 @@
 import React from "react";
+import Harper from "../assets/harpercollege_logo.jpg";
+import Elmhurst from "../assets/elmhurstuniversity_logo.jpg";
 
 const educationItems = [
   {
     school: "Elmhurst University",
+    logo: Elmhurst,
     location: "Elmhurst, IL",
     degree: "Bachelor of Science in Accounting; Second Major in Finance",
     dates: "Expected May 2028",
@@ -17,10 +20,12 @@ const educationItems = [
   },
   {
     school: "Harper College",
+    logo: Harper,
     location: "Palatine, IL",
     degree: "Associate in Arts",
     dates: "May 2026",
-    highlight: "GPA: 3.32 | President’s List | Dean’s List | 73 credits completed",
+    highlight:
+      "GPA: 3.32 | President’s List | Dean’s List | 73 credits completed",
     coursework: [
       "Financial Accounting",
       "Managerial Accounting",
@@ -116,39 +121,63 @@ const Education = () => {
 
 const EducationCard = ({ item }) => {
   return (
-    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6 hover:scale-[1.01] duration-300">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-        <div>
-          <h3 className="text-white text-xl font-bold">{item.school}</h3>
-          <p className="text-slate-400 text-sm">{item.location}</p>
+    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+        {/* School Info + Logo */}
+        <div className="flex items-start gap-4">
+          {item.logo && (
+            <div className="flex-shrink-0">
+              <img
+                src={item.logo}
+                alt={`${item.school} logo`}
+                className="w-16 h-16 rounded-xl object-contain bg-white p-2"
+              />
+            </div>
+          )}
+
+          <div>
+            <h3 className="text-white text-xl font-bold">{item.school}</h3>
+
+            <p className="text-slate-400 text-sm">{item.location}</p>
+          </div>
         </div>
 
-        <p className="text-slate-300 text-sm font-semibold">{item.dates}</p>
+        {/* Dates */}
+        <p className="text-slate-300 text-sm font-semibold whitespace-nowrap">
+          {item.dates}
+        </p>
       </div>
 
+      {/* Degree Information */}
       <div className="mt-4">
         <p className="text-slate-100 font-bold">{item.degree}</p>
-        <p className="text-red-400 text-sm font-semibold mt-2">
-          {item.highlight}
-        </p>
+
+        {item.highlight && (
+          <p className="text-red-400 text-sm font-semibold mt-2">
+            {item.highlight}
+          </p>
+        )}
       </div>
 
-      <div className="mt-5">
-        <p className="text-white font-bold text-sm mb-3">
-          Relevant Coursework
-        </p>
+      {/* Coursework */}
+      {item.coursework?.length > 0 && (
+        <div className="mt-5">
+          <p className="text-white font-bold text-sm mb-3">
+            Relevant Coursework
+          </p>
 
-        <div className="flex flex-wrap gap-2">
-          {item.coursework.map((course) => (
-            <span
-              key={course}
-              className="text-xs text-slate-200 bg-slate-800/90 border border-white/10 rounded-full px-3 py-2"
-            >
-              {course}
-            </span>
-          ))}
+          <div className="flex flex-wrap gap-2">
+            {item.coursework.map((course) => (
+              <span
+                key={course}
+                className="text-xs text-slate-200 bg-slate-800/90 border border-white/10 rounded-full px-3 py-2"
+              >
+                {course}
+              </span>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
@@ -174,4 +203,3 @@ const DevelopmentCard = ({ item }) => {
 };
 
 export default Education;
-

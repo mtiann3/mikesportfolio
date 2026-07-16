@@ -36,7 +36,7 @@ const Home = () => {
               duration={500}
               className="cursor-pointer"
             >
-              <button className="text-white group border-2 px-6 py-3 flex items-center hover:bg-pink-600 hover:border-[#4a4a4a] duration-300">
+              <button className="text-white group border-2 px-6 py-3 flex items-center hover:bg-[#4a4a4a] hover:border-[#4a4a4a] duration-300">
                 View Experience
                 <span className="group-hover:rotate-90 duration-300">
                   <HiArrowNarrowRight className="ml-3" />

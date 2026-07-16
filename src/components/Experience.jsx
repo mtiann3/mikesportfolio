@@ -1,11 +1,15 @@
 // src/components/Work.jsx
 
 import React from "react";
+import Cyera from "../assets/cyera_logo.jpg";
+import lululemon from "../assets/lululemon_logo.jpg";
+import LifeTime from "../assets/lifetimeinc_logo.jpg";
 
 const experiences = [
   {
     company: "Cyera",
     role: "Sales Development Representative Intern",
+    logo: Cyera,
     location: "Chicago, IL",
     dates: "June 2026 – August 2026",
     tag: "Business development, account research, and professional communication",
@@ -19,6 +23,7 @@ const experiences = [
   {
     company: "lululemon",
     role: "Educator",
+    logo: lululemon,
     location: "Schaumburg, IL",
     dates: "April 2024 – November 2025",
     tag: "Guest education, premium retail service, and relationship-building",
@@ -30,8 +35,9 @@ const experiences = [
     ],
   },
   {
-    company: "Life Time Fitness",
+    company: "Life Time",
     role: "Life Cafe Team Member",
+    logo: LifeTime,
     location: "Schaumburg, IL",
     dates: "April 2024 – Present",
     tag: "Member service, operations, and teamwork",
@@ -96,24 +102,43 @@ const Experience = () => {
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6 hover:scale-[1.01] duration-300">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
-        <div>
-          <h3 className="text-white text-xl font-bold">{experience.company}</h3>
-          <p className="text-slate-200 font-semibold">{experience.role}</p>
-          <p className="text-slate-400 text-sm">{experience.location}</p>
+    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
+      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+        {/* Company Info */}
+        <div className="flex items-start gap-4">
+          {experience.logo && (
+            <div className="flex-shrink-0">
+              <img
+                src={experience.logo}
+                alt={`${experience.company} logo`}
+                className="w-14 h-14 rounded-lg object-contain bg-white p-1"
+              />
+            </div>
+          )}
+
+          <div>
+            <h3 className="text-white text-xl font-bold">
+              {experience.company}
+            </h3>
+
+            <p className="text-slate-200 font-semibold">{experience.role}</p>
+
+            <p className="text-slate-400 text-sm">{experience.location}</p>
+          </div>
         </div>
 
-        <p className="text-slate-300 text-sm font-semibold">
+        <p className="text-slate-300 text-sm font-semibold whitespace-nowrap">
           {experience.dates}
         </p>
       </div>
 
-      <p className="text-red-400 text-sm font-semibold mt-4">
-        {experience.tag}
-      </p>
+      {experience.tag && (
+        <p className="text-red-400 text-sm font-semibold mt-4">
+          {experience.tag}
+        </p>
+      )}
 
-      <ul className="text-sm text-slate-300 space-y-2 list-disc pl-5 mt-4">
+      <ul className="mt-4 pl-5 space-y-2 list-disc text-sm text-slate-300">
         {experience.bullets.map((bullet) => (
           <li key={bullet}>{bullet}</li>
         ))}
@@ -123,4 +148,3 @@ const ExperienceCard = ({ experience }) => {
 };
 
 export default Experience;
-
