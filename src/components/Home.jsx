@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import Me from "../assets/IMG_2216.PNG";
+import Me from "../assets/DSC07122.JPG";
 import Resume from "../assets/Mike Iannotti Resume.pdf";
 
 const Home = () => {
@@ -18,7 +18,8 @@ const Home = () => {
           </h1>
 
           <h2 className="text-xl sm:text-3xl font-bold text-[#99b3ff]">
-            Accounting and Finance Student Focused on Tax-Aware Wealth Management
+            Accounting and Finance Student Focused on Tax-Aware Wealth
+            Management
           </h2>
 
           <p className="text-[#ebecf0] font-medium py-4 max-w-[700px] leading-relaxed">
@@ -54,11 +55,13 @@ const Home = () => {
 
         {/* IMAGE SECTION */}
         <div className="flex justify-center items-center">
-          <img
-            src={Me}
-            alt="Profile"
-            className="w-64 h-64 sm:w-80 sm:h-80 rounded-full object-cover border-4 border-[#8892b0] shadow-lg"
-          />
+          <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-full overflow-hidden border-4 border-[#8892b0] shadow-lg">
+            <img
+              src={Me}
+              alt="Profile"
+              className="w-full h-full object-cover scale-110"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -61,7 +61,7 @@ const Navbar = () => {
               <Link
                 to={item.to}
                 {...linkProps}
-                className="relative cursor-pointer transition duration-300 hover:text-red-600 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-red-600 after:transition-all hover:after:w-full"
+                className="relative cursor-pointer transition duration-300 font-bold hover:text-red-600 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-red-600 after:transition-all hover:after:w-full"
               >
                 {item.label}
               </Link>
