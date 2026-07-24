@@ -1,7 +1,7 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import Me from "../assets/DSC07122.JPG";
+import Me from "../assets/DSC07129.JPG";
 import Resume from "../assets/Mike Iannotti Resume.pdf";
 
 const Home = () => {
