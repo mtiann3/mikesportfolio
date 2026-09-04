@@ -10,7 +10,7 @@ const experiences = [
     company: "WGTaxLaw",
     role: "Part-Time Intern",
     location: "Accounting, tax, and business support",
-    dates: "Current",
+    dates: "August 2026 – Present",
     tag: "Hands-on accounting experience and professional learning",
     bullets: [
       "Enter business transactions and support accurate, organized financial records.",
@@ -77,7 +77,7 @@ const Experience = () => {
             Experience
           </p>
 
-          <p className="py-4 font-semibold text-slate-300 max-w-[850px] leading-relaxed">
+          <p className="py-4 font-semibold text-slate-100 max-w-[850px] leading-relaxed">
             Experience across accounting, business development, retail, and
             service—each offering a different view of how organizations serve
             people and operate well.
@@ -95,12 +95,12 @@ const Experience = () => {
         </div>
 
         {/* CAREER CONNECTION */}
-        <div className="mt-10 bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6">
+        <div className="mt-10 bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6">
           <h3 className="text-white text-lg font-bold mb-3">
             What I’m Taking Forward
           </h3>
 
-          <p className="text-slate-300 text-sm leading-relaxed">
+          <p className="text-slate-100 text-sm leading-relaxed">
             These roles have helped me connect classroom concepts with real
             work: accurate financial records, thoughtful research, clear
             communication, consistent service, and dependable teamwork. I want
@@ -115,7 +115,7 @@ const Experience = () => {
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
+    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
         {/* Company Info */}
         <div className="flex items-start gap-4">
@@ -136,11 +136,11 @@ const ExperienceCard = ({ experience }) => {
 
             <p className="text-slate-200 font-semibold">{experience.role}</p>
 
-            <p className="text-slate-400 text-sm">{experience.location}</p>
+            <p className="text-slate-200 text-sm">{experience.location}</p>
           </div>
         </div>
 
-        <p className="text-slate-300 text-sm font-semibold whitespace-nowrap">
+        <p className="text-slate-100 text-sm font-semibold whitespace-nowrap">
           {experience.dates}
         </p>
       </div>
@@ -151,7 +151,7 @@ const ExperienceCard = ({ experience }) => {
         </p>
       )}
 
-      <ul className="mt-4 pl-5 space-y-2 list-disc text-sm text-slate-300">
+      <ul className="mt-4 pl-5 space-y-2 list-disc text-sm text-slate-100">
         {experience.bullets.map((bullet) => (
           <li key={bullet}>{bullet}</li>
         ))}

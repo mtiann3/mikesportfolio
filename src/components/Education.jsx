@@ -63,7 +63,7 @@ const Education = () => {
             Education
           </p>
 
-          <p className="py-4 font-semibold text-slate-300 max-w-[850px] leading-relaxed">
+          <p className="py-4 font-semibold text-slate-100 max-w-[850px] leading-relaxed">
             Academic work across accounting, finance, business, economics, and
             information systems, supported by practical experience outside the
             classroom.
@@ -83,7 +83,7 @@ const Education = () => {
             Professional Development
           </h2>
 
-          <p className="text-sm text-slate-300 mb-6 max-w-[850px] leading-relaxed">
+          <p className="text-sm text-slate-100 mb-6 max-w-[850px] leading-relaxed">
             A completed industry exam that complements my finance coursework
             without defining a single long-term career path.
           </p>
@@ -102,7 +102,7 @@ const Education = () => {
 
 const EducationCard = ({ item }) => {
   return (
-    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
+    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
       <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
         {/* School Info + Logo */}
         <div className="flex items-start gap-4">
@@ -119,12 +119,12 @@ const EducationCard = ({ item }) => {
           <div>
             <h3 className="text-white text-xl font-bold">{item.school}</h3>
 
-            <p className="text-slate-400 text-sm">{item.location}</p>
+            <p className="text-slate-200 text-sm">{item.location}</p>
           </div>
         </div>
 
         {/* Dates */}
-        <p className="text-slate-300 text-sm font-semibold whitespace-nowrap">
+        <p className="text-slate-100 text-sm font-semibold whitespace-nowrap">
           {item.dates}
         </p>
       </div>
@@ -165,7 +165,7 @@ const EducationCard = ({ item }) => {
 
 const DevelopmentCard = ({ item }) => {
   return (
-    <div className="bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-5 hover:scale-[1.02] duration-300">
+    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-5 hover:scale-[1.02] duration-300">
       <div className="flex items-center justify-between gap-3 mb-3">
         <p className="text-xs text-red-400 font-bold uppercase tracking-wide">
           {item.status}
@@ -174,9 +174,9 @@ const DevelopmentCard = ({ item }) => {
 
       <h3 className="text-white text-lg font-bold">{item.title}</h3>
 
-      <p className="text-slate-400 text-sm mt-1">{item.date}</p>
+      <p className="text-slate-200 text-sm mt-1">{item.date}</p>
 
-      <p className="text-slate-300 text-sm leading-relaxed mt-4">
+      <p className="text-slate-100 text-sm leading-relaxed mt-4">
         {item.description}
       </p>
     </div>

@@ -57,7 +57,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full min-h-screen text-gray-300 bg-none py-16 scroll-mt-24"
+      className="w-full min-h-screen text-slate-100 bg-none py-16 scroll-mt-24"
     >
       <div className="max-w-[1000px] mx-auto px-4">
         {/* HEADER */}
@@ -66,7 +66,7 @@ const Projects = () => {
             Projects
           </p>
 
-          <p className="py-4 font-bold text-gray-300 max-w-[850px] leading-relaxed">
+          <p className="py-4 font-bold text-slate-100 max-w-[850px] leading-relaxed">
             Applied business analysis and earlier technical work that show how
             I approach questions, organize information, and turn ideas into
             something concrete.
@@ -79,7 +79,7 @@ const Projects = () => {
             <h2 className="text-xl font-semibold text-white">
               Applied Business Project
             </h2>
-            <p className="text-sm text-gray-400 mt-2 max-w-[850px] leading-relaxed">
+            <p className="text-sm text-slate-200 mt-2 max-w-[850px] leading-relaxed">
               A serious exploration of a business idea—not a claim that the
               company is operating today.
             </p>
@@ -91,7 +91,7 @@ const Projects = () => {
             ))}
           </div>
 
-          <p className="text-xs font-bold text-gray-400 mt-5 leading-relaxed">
+          <p className="text-xs font-bold text-slate-200 mt-5 leading-relaxed">
             Gemelli is an independent feasibility project and is not currently
             an operating company.
           </p>
@@ -103,7 +103,7 @@ const Projects = () => {
             <h2 className="text-xl font-semibold text-white">
               Technical Background
             </h2>
-            <p className="text-sm font-bold text-gray-400 mt-2 max-w-[850px] leading-relaxed">
+            <p className="text-sm font-bold text-slate-200 mt-2 max-w-[850px] leading-relaxed">
               Earlier software projects that demonstrate programming, mobile
               development, data organization, and problem solving. Technology
               remains a useful part of how I analyze and build, even though it
@@ -122,7 +122,7 @@ const Projects = () => {
         <div
           className="
     mt-16
-    bg-slate-900/90
+    bg-slate-950/95
     border
     border-white/10
     backdrop-blur-sm
@@ -136,7 +136,7 @@ const Projects = () => {
         >
           <h2 className="text-white text-lg font-bold mb-3">Current Focus</h2>
 
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-slate-200 text-sm leading-relaxed">
             I am studying finance and accounting at Elmhurst University while
             gaining practical experience and testing ideas through projects.
             I’m open to several paths, especially work that combines business
@@ -154,7 +154,7 @@ const PlanningProjectCard = ({ project }) => {
   return (
     <div
       className="
-        bg-slate-900/90
+        bg-slate-950/95
         border
         border-white/10
         backdrop-blur-sm
@@ -178,7 +178,7 @@ const PlanningProjectCard = ({ project }) => {
         <span
           className="
             text-xs
-            text-slate-300
+            text-slate-100
             border
             border-white/20
             rounded-full
@@ -195,7 +195,7 @@ const PlanningProjectCard = ({ project }) => {
       <h3 className="text-white text-xl font-bold">{project.title}</h3>
 
       {/* Description */}
-      <p className="text-sm text-slate-400 mt-3 leading-relaxed">
+      <p className="text-sm text-slate-200 mt-3 leading-relaxed">
         {project.desc}
       </p>
 
@@ -208,7 +208,7 @@ const PlanningProjectCard = ({ project }) => {
           Areas of Analysis
         </p>
 
-        <ul className="text-sm text-slate-300 space-y-2 list-disc pl-5">
+        <ul className="text-sm text-slate-100 space-y-2 list-disc pl-5">
           {project.deliverables.map((item) => (
             <li key={item}>{item}</li>
           ))}
@@ -223,7 +223,7 @@ const TechnicalProjectCard = ({ project }) => {
   return (
     <div
       className="
-        bg-slate-900/90
+        bg-slate-950/95
         border
         border-white/10
         backdrop-blur-sm
@@ -253,7 +253,7 @@ const TechnicalProjectCard = ({ project }) => {
       <h3 className="text-white text-xl font-bold">{project.title}</h3>
 
       {/* Project Description */}
-      <p className="text-sm text-slate-400 mt-3 leading-relaxed">
+      <p className="text-sm text-slate-200 mt-3 leading-relaxed">
         {project.desc}
       </p>
 

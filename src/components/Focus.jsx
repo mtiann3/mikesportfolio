@@ -23,7 +23,7 @@ const Focus = () => {
     <div
       id="focus"
       name="focus"
-      className="w-full min-h-screen text-gray-300 bg-none py-16 scroll-mt-24"
+      className="w-full min-h-screen text-slate-100 bg-none py-16 scroll-mt-24"
     >
       <div className="max-w-[1000px] mx-auto px-4">
 
@@ -33,7 +33,7 @@ const Focus = () => {
             Interests
           </p>
 
-          <p className="py-4 font-medium text-gray-300 max-w-3xl">
+          <p className="py-4 font-medium text-slate-100 max-w-3xl">
             I am exploring several paths rather than forcing an early answer.
             These are the themes connecting what I study, the work I pursue,
             and the projects I choose.
@@ -48,7 +48,7 @@ const Focus = () => {
             <div
               key={area.title}
               className="
-                bg-slate-900/90
+                bg-slate-950/95
                 border
                 border-white/10
                 backdrop-blur-sm
@@ -66,7 +66,7 @@ const Focus = () => {
                 {area.title}
               </h3>
 
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-200 text-sm leading-relaxed">
                 {area.description}
               </p>
 

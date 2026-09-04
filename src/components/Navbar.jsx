@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-medium tracking-wide text-gray-300">
+        <ul className="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-medium tracking-wide text-slate-100">
 
           {navLinks.map((item) => (
             <li key={item.to}>
@@ -77,7 +77,7 @@ const Navbar = () => {
         </ul>
 
         {/* Desktop Social Icons */}
-        <div className="hidden lg:flex items-center gap-5 text-xl text-gray-300">
+        <div className="hidden lg:flex items-center gap-5 text-xl text-slate-100">
 
 
           <a
@@ -103,7 +103,7 @@ const Navbar = () => {
           onClick={toggleNav}
           aria-label={nav ? "Close navigation menu" : "Open navigation menu"}
           aria-expanded={nav}
-          className="md:hidden text-2xl text-gray-300 z-50"
+          className="md:hidden text-2xl text-slate-100 z-50"
         >
           {nav ? <FaTimes /> : <FaBars />}
         </button>
@@ -142,7 +142,7 @@ const Navbar = () => {
             Resume
           </a>
 
-          <div className="flex gap-8 mt-10 text-3xl text-gray-300">
+          <div className="flex gap-8 mt-10 text-3xl text-slate-100">
 
             <a
               href="https://linkedin.com/in/michael-iannotti-5a9043417"

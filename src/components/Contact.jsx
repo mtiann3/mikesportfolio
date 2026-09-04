@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section
       name="contact"
-      className="w-full  text-gray-300 py-20"
+      className="w-full  text-slate-100 py-20"
     >
       <div className="max-w-[900px] h-screen mx-auto px-6">
         {/* Heading */}
@@ -16,7 +16,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold inline border-b-4 border-red-600">
             Contact
           </h2>
-          <p className="mt-4 text-gray-400 max-w-lg">
+          <p className="mt-4 text-slate-200 max-w-lg">
             Feel free to connect with me professionally, download my resume, or
             reach out by email.
           </p>
@@ -29,7 +29,7 @@ const Contact = () => {
             href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-slate-900/90 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
           >
             <img
               src={Linkedin2}
@@ -41,7 +41,7 @@ const Contact = () => {
               LinkedIn
             </h3>
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-slate-200">
               View my professional profile and connect with me.
             </p>
           </a>
@@ -50,7 +50,7 @@ const Contact = () => {
           <a
             href={ResumePDF}
             download="MikeIannottiResume.pdf"
-            className="bg-slate-900/90 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
           >
             <img
               src={Resume}
@@ -62,7 +62,7 @@ const Contact = () => {
               Resume
             </h3>
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-slate-200">
               Download a copy of my resume in PDF format.
             </p>
           </a>
@@ -70,7 +70,7 @@ const Contact = () => {
           {/* Email */}
           <a
             href="mailto:miannotti06@gmail.com"
-            className="bg-slate-900/90 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
+            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
           >
             <MdEmail size={72} className="text-white" />
 
@@ -78,7 +78,7 @@ const Contact = () => {
               Email
             </h3>
 
-            <p className="mt-2 text-sm text-gray-400">
+            <p className="mt-2 text-sm text-slate-200">
               Have a question or opportunity? I'd be happy to hear from you.
             </p>
           </a>

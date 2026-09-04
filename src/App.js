@@ -15,7 +15,7 @@ function App() {
       className="text-slate-100 min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
       style={{ backgroundImage: `url(${Chicago})` }}
     >
-      <div className="min-h-screen bg-slate-950/90">
+      <div className="min-h-screen bg-slate-950/95">
         <Navbar />
 
         <div className="pt-[80px]">
