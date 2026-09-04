@@ -15,8 +15,8 @@ const Skills = () => {
           </p>
 
           <p className="py-4 font-medium text-gray-300">
-            Accounting, business, and technical skills developed through
-            coursework and work experience
+            Skills and working knowledge developed through coursework,
+            internships, projects, and customer-facing roles
           </p>
         </div>
 
@@ -24,28 +24,27 @@ const Skills = () => {
         {/* SKILLS */}
         <div className="space-y-10">
 
-          <Section title="Financial Planning & Business Foundation">
+          <Section title="Accounting & Business Foundation">
             <Skill title="Accounting Fundamentals" />
-            <Skill title="Financial Analysis" />
-            <Skill title="Financial Statement Analysis" />
+            <Skill title="Transaction Entries" />
+            <Skill title="Bank Reconciliations" />
+            <Skill title="Microsoft Excel" />
+            <Skill title="Business Analysis" />
             <Skill title="Business Law Coursework" />
-            <Skill title="Economics Coursework" />
-            <Skill title="Tax-Aware Planning Interest" />
           </Section>
 
 
           <Section title="Client Service & Communication">
-            <Skill title="Client Communication" />
+            <Skill title="Professional Communication" />
             <Skill title="Account Research" />
             <Skill title="Prospect Research" />
             <Skill title="Business Communication" />
             <Skill title="Customer Service" />
-            <Skill title="Professional Follow-Up" />
+            <Skill title="Team Collaboration" />
           </Section>
 
 
           <Section title="Technical & Analytical Tools">
-            <Skill title="Microsoft Excel" />
             <Skill title="Microsoft Word" />
             <Skill title="Microsoft PowerPoint" />
             <Skill title="Python" />
@@ -54,13 +53,13 @@ const Skills = () => {
           </Section>
 
 
-          <Section title="Professional Tools">
+          <Section title="Professional Tools & Workflows">
             <Skill title="Salesforce" />
             <Skill title="Google Workspace" />
             <Skill title="Slack" />
             <Skill title="Data Organization" />
             <Skill title="Research Workflows" />
-            <Skill title="AI Tools" />
+            <Skill title="Information Systems" />
           </Section>
 
         </div>

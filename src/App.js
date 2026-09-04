@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-import Socials from "./components/Socials";
 import Experience from "./components/Experience";
 import Chicago from "./assets/chicago.jpg";
 import Focus from "./components/Focus";
@@ -16,8 +15,7 @@ function App() {
       className="text-slate-100 min-h-screen bg-no-repeat bg-center bg-cover bg-fixed"
       style={{ backgroundImage: `url(${Chicago})` }}
     >
-      {/* overlay for readability */}
-      <div className="min-h-screen bg-black/80">
+      <div className="min-h-screen bg-slate-950/90">
         <Navbar />
 
         <div className="pt-[80px]">
@@ -35,7 +33,7 @@ function App() {
           <section id="experience">
             <Experience />
           </section>
-              <section id="education">
+          <section id="education">
             <Education />
           </section>
 
@@ -43,7 +41,6 @@ function App() {
             <Projects />
           </section>
 
-      
           <section id="skills">
             <Skills />
           </section>
@@ -51,11 +48,6 @@ function App() {
           <section id="contact">
             <Contact />
           </section>
-      
-
-          {/* <section id="contact">
-            <Contact />
-          </section> */}
         </div>
       </div>
     </div>

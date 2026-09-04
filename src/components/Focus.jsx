@@ -2,19 +2,19 @@ import React from "react";
 
 const focusAreas = [
   {
-    title: "Wealth Management & Financial Planning",
+    title: "Business & Financial Fundamentals",
     description:
-      "Interested in planning-first wealth management, retirement planning, investment education, and helping families make confident long-term financial decisions.",
+      "Building practical accounting and finance skills while learning how real businesses make decisions, manage resources, and create value.",
   },
   {
-    title: "Tax-Aware Planning",
+    title: "Ownership & Entrepreneurship",
     description:
-      "Building accounting and tax knowledge to better understand cash flow, tax strategy, business owners, and how financial decisions affect real families.",
+      "Interested in what it takes to evaluate, launch, and responsibly grow a business—from the numbers to the operating details.",
   },
   {
-    title: "Client Service & Technology",
+    title: "People, Leadership & Service",
     description:
-      "Developing communication, research, organization, Excel, and technical skills to make financial information easier to understand and act on.",
+      "Drawn to work built on trust, clear communication, strong teams, and a positive impact on clients, coworkers, and the community.",
   },
 ];
 
@@ -30,12 +30,13 @@ const Focus = () => {
         {/* Section Header */}
         <div className="mb-12">
           <p className="text-4xl font-bold inline border-b-4 border-red-600">
-            Focus
+            Interests
           </p>
 
           <p className="py-4 font-medium text-gray-300 max-w-3xl">
-            My career direction is wealth management and financial planning,
-            supported by accounting, tax, client service, and technology.
+            I am exploring several paths rather than forcing an early answer.
+            These are the themes connecting what I study, the work I pursue,
+            and the projects I choose.
           </p>
         </div>
 

@@ -6,28 +6,28 @@ import Resume from "../assets/Mike Iannotti Resume.pdf";
 
 const Home = () => {
   return (
-    <div name="home" className="w-full h-screen bg-none">
+    <div name="home" className="w-full min-h-[calc(100vh-80px)] bg-none py-16">
       {/* CENTER WRAPPER */}
-      <div className="max-w-[1000px] mx-auto px-8 h-full flex flex-col md:flex-row justify-center items-center gap-10">
+      <div className="max-w-[1000px] mx-auto px-6 min-h-[calc(100vh-208px)] flex flex-col md:flex-row justify-center items-center gap-10">
         {/* TEXT SECTION */}
         <div className="flex flex-col items-start">
-          <p className="text-lg font-semibold text-red-600">Hi, my name is</p>
+          <p className="text-lg font-semibold text-red-500">Hi, my name is</p>
 
           <h1 className="text-4xl sm:text-7xl font-bold text-[#ccd6f6]">
             Michael Iannotti
           </h1>
 
-          <h2 className="text-xl sm:text-3xl font-bold text-[#99b3ff]">
-            Accounting and Finance Student Focused on Tax-Aware Wealth
-            Management
+          <h2 className="text-xl sm:text-3xl font-bold text-[#a8bbef] mt-2">
+            Finance and Accounting Student Exploring Business, Ownership, and
+            Meaningful Work
           </h2>
 
           <p className="text-[#ebecf0] font-medium py-4 max-w-[700px] leading-relaxed">
-            I’m building a foundation in accounting, finance, client service,
-            and technology with the long-term goal of becoming a planning-first
-            wealth advisor. My interests include financial planning, tax-aware
-            decision-making, investment education, and helping families and
-            business owners make confident long-term financial decisions.
+            I’m a junior at Elmhurst University learning how businesses work
+            through accounting, finance, client-facing roles, and applied
+            projects. I’m interested in entrepreneurship, leadership, and
+            helping people—and I’m keeping an open mind about where those
+            interests will lead.
           </p>
 
           <div className="flex flex-wrap gap-4 mt-2">

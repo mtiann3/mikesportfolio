@@ -10,7 +10,7 @@ const educationItems = [
     degree: "Bachelor of Science in Accounting; Second Major in Finance",
     dates: "Expected May 2028",
     highlight:
-      "Career direction: Exploring wealth management, financial planning, and tax-aware advisory work.",
+      "Junior studying finance and accounting while exploring business, advisory, and ownership paths.",
     coursework: [
       "Intermediate Accounting I",
       "Principles of Marketing",
@@ -42,24 +42,10 @@ const educationItems = [
 const professionalDevelopment = [
   {
     title: "Securities Industry Essentials (SIE) Exam",
-    status: "In Progress",
-    date: "Expected end of summer",
+    status: "Passed",
+    date: "Completed",
     description:
-      "Currently studying foundational securities industry topics including products, risks, market structure, customer accounts, prohibited activities, and regulatory framework.",
-  },
-  {
-    title: "CFP® Certification Path",
-    status: "Future Interest",
-    date: "Long-term planning focus",
-    description:
-      "Interested in financial planning education, exam, experience, and ethics requirements as part of a planning-first wealth management career.",
-  },
-  {
-    title: "CPA Eligibility / Tax-Aware Advisory Path",
-    status: "Future Optionality",
-    date: "Supported by Accounting + Finance coursework",
-    description:
-      "Building an accounting foundation that may support future CPA eligibility, tax-focused advisory work, and credibility with families and business owners.",
+      "Passed the FINRA SIE exam, demonstrating foundational knowledge of securities products, risks, market structure, customer accounts, and industry regulation.",
   },
 ];
 
@@ -78,9 +64,9 @@ const Education = () => {
           </p>
 
           <p className="py-4 font-semibold text-slate-300 max-w-[850px] leading-relaxed">
-            Academic background in accounting, finance, business, economics, and
-            technology, supporting my interest in wealth management, financial
-            planning, and tax-aware advisory work.
+            Academic work across accounting, finance, business, economics, and
+            information systems, supported by practical experience outside the
+            classroom.
           </p>
         </div>
 
@@ -98,9 +84,8 @@ const Education = () => {
           </h2>
 
           <p className="text-sm text-slate-300 mb-6 max-w-[850px] leading-relaxed">
-            Exams, credentials, and learning paths I am pursuing or exploring as
-            I build toward wealth management, financial planning, accounting,
-            finance, and tax-aware advisory work.
+            A completed industry exam that complements my finance coursework
+            without defining a single long-term career path.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -109,10 +94,6 @@ const Education = () => {
             ))}
           </div>
 
-          <p className="text-xs font-bold text-slate-400 mt-5 leading-relaxed">
-            Future interest items are not completed credentials. They reflect
-            areas I am exploring as part of my career planning.
-          </p>
         </div>
       </div>
     </div>

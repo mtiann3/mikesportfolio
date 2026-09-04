@@ -5,45 +5,19 @@ import Ren from "../assets/medium.png";
 import AthleteIQ from "../assets/athleteiq.png";
 import dinorun from "../assets/dinorun.png";
 
-const planningProjects = [
+const appliedProjects = [
   {
-    title: "Mock Family Financial Plan",
-    tag: "Financial Planning",
+    title: "Gemelli Independent Business Feasibility Project",
+    tag: "Applied Business Study",
     status: "In Progress",
-    desc: "A simulated financial planning case study for a young family, covering cash flow, emergency fund planning, retirement savings, insurance questions, education savings, and next steps.",
-    tools: "Excel • Financial Planning • Cash Flow Analysis",
+    desc: "An independent project with my twin brother, Jack, evaluating whether an Italian deli and specialty food concept could become a viable business. It is a structured way to apply finance, accounting, analytics, and information systems to a real idea.",
+    tools: "Finance • Accounting • Analytics • Information Systems",
     deliverables: [
-      "Client profile and goals",
-      "Monthly cash-flow summary",
-      "Emergency fund target",
-      "Retirement savings assumptions",
-      "Planning recommendations",
-    ],
-  },
-  {
-    title: "Roth vs. Traditional Contribution Analysis",
-    tag: "Tax-Aware Planning",
-    status: "Planned",
-    desc: "An Excel-based model comparing Roth and Traditional retirement contribution scenarios using different income, tax, and time-horizon assumptions.",
-    tools: "Excel • Tax-Aware Planning • Retirement Analysis",
-    deliverables: [
-      "Income and tax assumptions",
-      "Contribution comparison",
-      "Long-term account value scenarios",
-      "Summary memo",
-    ],
-  },
-  {
-    title: "Small-Business Owner Planning Dashboard",
-    tag: "Accounting + Wealth Planning",
-    status: "Planned",
-    desc: "A simulated dashboard for a small business owner showing revenue, expenses, profit margin, cash flow, estimated tax considerations, and owner planning questions.",
-    tools: "Excel • Accounting • Business Advisory",
-    deliverables: [
-      "Revenue and expense dashboard",
-      "Profit margin summary",
-      "Cash-flow snapshot",
-      "Owner planning questions",
+      "Local market and competitor research",
+      "Startup and operating cost estimates",
+      "Revenue, margin, and cash-flow scenarios",
+      "Operating requirements and information-system needs",
+      "A grounded go / no-go framework",
     ],
   },
 ];
@@ -93,35 +67,33 @@ const Projects = () => {
           </p>
 
           <p className="py-4 font-bold text-gray-300 max-w-[850px] leading-relaxed">
-            Financial planning, accounting, and technical projects showing my
-            interest in wealth management, tax-aware planning, business
-            analysis, and using technology to make financial decisions easier to
-            understand.
+            Applied business analysis and earlier technical work that show how
+            I approach questions, organize information, and turn ideas into
+            something concrete.
           </p>
         </div>
 
-        {/* PLANNING PROJECTS */}
+        {/* APPLIED BUSINESS PROJECT */}
         <div className="mb-16">
           <div className="mb-6">
             <h2 className="text-xl font-semibold text-white">
-              Financial Planning & Advisory Projects
+              Applied Business Project
             </h2>
             <p className="text-sm text-gray-400 mt-2 max-w-[850px] leading-relaxed">
-              These projects are being built with simulated data to support my
-              career interest in wealth management, financial planning,
-              accounting, and tax-aware advisory work.
+              A serious exploration of a business idea—not a claim that the
+              company is operating today.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {planningProjects.map((project) => (
+          <div className="grid grid-cols-1 gap-6">
+            {appliedProjects.map((project) => (
               <PlanningProjectCard key={project.title} project={project} />
             ))}
           </div>
 
           <p className="text-xs font-bold text-gray-400 mt-5 leading-relaxed">
-            Projects use simulated data for educational purposes only and are
-            not financial, tax, investment, or legal advice.
+            Gemelli is an independent feasibility project and is not currently
+            an operating company.
           </p>
         </div>
 
@@ -132,10 +104,10 @@ const Projects = () => {
               Technical Background
             </h2>
             <p className="text-sm font-bold text-gray-400 mt-2 max-w-[850px] leading-relaxed">
-              Earlier software projects that demonstrate my experience with
-              programming, mobile development, data organization, and problem
-              solving. I view these skills as a supporting advantage for
-              finance, planning, and advisory work.
+              Earlier software projects that demonstrate programming, mobile
+              development, data organization, and problem solving. Technology
+              remains a useful part of how I analyze and build, even though it
+              is no longer my academic minor.
             </p>
           </div>
 
@@ -165,12 +137,11 @@ const Projects = () => {
           <h2 className="text-white text-lg font-bold mb-3">Current Focus</h2>
 
           <p className="text-slate-400 text-sm leading-relaxed">
-            I am currently pursuing Accounting and Finance at Elmhurst
-            University while exploring career paths in wealth management,
-            financial planning, and tax-aware advisory work. My goal is to
-            combine accounting, finance, client service, and technology to
-            better understand how individuals, families, and business owners
-            make financial decisions.
+            I am studying finance and accounting at Elmhurst University while
+            gaining practical experience and testing ideas through projects.
+            I’m open to several paths, especially work that combines business
+            judgment, responsibility, people, and the chance to build something
+            meaningful.
           </p>
         </div>
       </div>
@@ -178,7 +149,7 @@ const Projects = () => {
   );
 };
 
-/* FINANCIAL PLANNING PROJECT CARD */
+/* APPLIED BUSINESS PROJECT CARD */
 const PlanningProjectCard = ({ project }) => {
   return (
     <div
@@ -234,7 +205,7 @@ const PlanningProjectCard = ({ project }) => {
       {/* Deliverables */}
       <div className="mt-5">
         <p className="text-white font-bold text-sm mb-3">
-          Planned Deliverables
+          Areas of Analysis
         </p>
 
         <ul className="text-sm text-slate-300 space-y-2 list-disc pl-5">

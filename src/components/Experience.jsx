@@ -7,6 +7,19 @@ import LifeTime from "../assets/lifetimeinc_logo.jpg";
 
 const experiences = [
   {
+    company: "WGTaxLaw",
+    role: "Part-Time Intern",
+    location: "Accounting, tax, and business support",
+    dates: "Current",
+    tag: "Hands-on accounting experience and professional learning",
+    bullets: [
+      "Enter business transactions and support accurate, organized financial records.",
+      "Perform bank reconciliations while learning how day-to-day activity flows through the accounting process.",
+      "Build a foundation to support tax return work as responsibilities expand.",
+      "May also gain exposure to legal work as the internship develops.",
+    ],
+  },
+  {
     company: "Cyera",
     role: "Sales Development Representative Intern",
     logo: Cyera,
@@ -17,7 +30,7 @@ const experiences = [
       "Supported BDR team efforts by qualifying and prospecting leads for active pipeline development.",
       "Built and enriched targeted prospect lists used by SDRs in outbound campaigns.",
       "Researched accounts and buyer personas to sharpen outbound targeting and messaging.",
-      "Developed business communication, account research, organization, and follow-up skills that translate well to client-facing advisory roles.",
+      "Developed business communication, account research, organization, and professional follow-up skills.",
     ],
   },
   {
@@ -31,7 +44,7 @@ const experiences = [
       "Educated guests on product features, fit, and lifestyle use cases to support informed purchasing decisions.",
       "Built guest relationships through attentive service, product knowledge, and personalized recommendations.",
       "Supported a premium retail experience by maintaining professionalism, teamwork, and strong communication in a fast-paced environment.",
-      "Developed client-service skills relevant to wealth management, financial planning, and advisory work.",
+      "Strengthened relationship-building, listening, and service skills in a high-expectation environment.",
     ],
   },
   {
@@ -65,9 +78,9 @@ const Experience = () => {
           </p>
 
           <p className="py-4 font-semibold text-slate-300 max-w-[850px] leading-relaxed">
-            Client-facing, business development, and service experience that
-            supports my interest in wealth management, financial planning, and
-            advisory work.
+            Experience across accounting, business development, retail, and
+            service—each offering a different view of how organizations serve
+            people and operate well.
           </p>
         </div>
 
@@ -84,15 +97,15 @@ const Experience = () => {
         {/* CAREER CONNECTION */}
         <div className="mt-10 bg-slate-900/90 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6">
           <h3 className="text-white text-lg font-bold mb-3">
-            How This Connects to My Career Direction
+            What I’m Taking Forward
           </h3>
 
           <p className="text-slate-300 text-sm leading-relaxed">
-            These experiences have helped me build communication, research,
-            organization, customer service, and follow-up skills. My goal is to
-            combine those client-facing skills with my Accounting and Finance
-            education as I explore wealth management, financial planning, and
-            tax-aware advisory work.
+            These roles have helped me connect classroom concepts with real
+            work: accurate financial records, thoughtful research, clear
+            communication, consistent service, and dependable teamwork. I want
+            to keep building that range while I explore where I can create the
+            most value over time.
           </p>
         </div>
       </div>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {
   FaBars,
   FaTimes,
-  FaGithub,
   FaLinkedin,
   FaEnvelope,
 } from "react-icons/fa";
@@ -26,13 +25,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { to: "home", label: "Home" },
     { to: "about", label: "About" },
-    { to: "focus", label: "Focus" },
+    { to: "focus", label: "Interests" },
     { to: "experience", label: "Experience" },
     { to: "education", label: "Education" },
     { to: "projects", label: "Projects" },
-    { to: "skills", label: "Skills" },
     { to: "contact", label: "Contact" },
   ];
 
@@ -54,7 +51,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <ul className="hidden md:flex items-center gap-8 text-sm font-medium tracking-wide text-gray-300">
+        <ul className="hidden md:flex items-center gap-5 lg:gap-7 text-sm font-medium tracking-wide text-gray-300">
 
           {navLinks.map((item) => (
             <li key={item.to}>
@@ -104,6 +101,8 @@ const Navbar = () => {
         {/* Mobile Button */}
         <button
           onClick={toggleNav}
+          aria-label={nav ? "Close navigation menu" : "Open navigation menu"}
+          aria-expanded={nav}
           className="md:hidden text-2xl text-gray-300 z-50"
         >
           {nav ? <FaTimes /> : <FaBars />}
