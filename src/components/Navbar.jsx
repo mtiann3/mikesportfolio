@@ -8,7 +8,6 @@ import {
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 
-import Logo3 from "../assets/mi-logo.webp";
 import Resume from "../assets/Mike Iannotti Resume.pdf";
 
 const Navbar = () => {
@@ -92,7 +91,7 @@ const Navbar = () => {
           aria-label="Back to top"
         >
           <img
-            src={Logo3}
+            src={`${process.env.PUBLIC_URL}/icon.svg`}
             alt="Michael Iannotti monogram"
             className="h-11 w-11 rounded-full"
           />

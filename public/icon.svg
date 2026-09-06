@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Michael Iannotti monogram</title>
+  <rect width="512" height="512" fill="#050d18" />
+  <circle cx="256" cy="256" r="210" fill="none" stroke="#ffffff" stroke-width="24" />
+  <path
+    fill="#ffffff"
+    d="M164 346V166h38l19 49 19-49h38v180h-38v-95l-19 49-19-49v95h-38Zm152 0V166h36v180h-36Z"
+  />
+</svg>
