@@ -4,19 +4,21 @@ import React from "react";
 import Cyera from "../assets/cyera_logo.jpg";
 import lululemon from "../assets/lululemon_logo.jpg";
 import LifeTime from "../assets/lifetimeinc_logo.jpg";
+import SectionHeader from "./SectionHeader";
 
 const experiences = [
   {
     company: "WGTaxLaw",
     role: "Part-Time Intern",
-    location: "Accounting, tax, and business support",
     dates: "August 2026 – Present",
-    tag: "Hands-on accounting experience and professional learning",
+    tag: "Accounting and tax support",
+    initials: "WG",
+    current: true,
     bullets: [
-      "Enter business transactions and support accurate, organized financial records.",
-      "Perform bank reconciliations while learning how day-to-day activity flows through the accounting process.",
-      "Build a foundation to support tax return work as responsibilities expand.",
-      "May also gain exposure to legal work as the internship develops.",
+      "Enter transactions and help keep financial records organized.",
+      "Work on bank reconciliations and learn how activity moves through the accounting process.",
+      "Expect to begin helping with tax returns as the internship continues.",
+      "May also have the opportunity to learn about some of the firm’s legal work.",
     ],
   },
   {
@@ -25,26 +27,11 @@ const experiences = [
     logo: Cyera,
     location: "Chicago, IL",
     dates: "June 2026 – August 2026",
-    tag: "Business development, account research, and professional communication",
+    tag: "Sales development and account research",
     bullets: [
-      "Supported BDR team efforts by qualifying and prospecting leads for active pipeline development.",
-      "Built and enriched targeted prospect lists used by SDRs in outbound campaigns.",
-      "Researched accounts and buyer personas to sharpen outbound targeting and messaging.",
-      "Developed business communication, account research, organization, and professional follow-up skills.",
-    ],
-  },
-  {
-    company: "lululemon",
-    role: "Educator",
-    logo: lululemon,
-    location: "Schaumburg, IL",
-    dates: "April 2024 – November 2025",
-    tag: "Guest education, premium retail service, and relationship-building",
-    bullets: [
-      "Educated guests on product features, fit, and lifestyle use cases to support informed purchasing decisions.",
-      "Built guest relationships through attentive service, product knowledge, and personalized recommendations.",
-      "Supported a premium retail experience by maintaining professionalism, teamwork, and strong communication in a fast-paced environment.",
-      "Strengthened relationship-building, listening, and service skills in a high-expectation environment.",
+      "Prospected and qualified potential leads for the business development team.",
+      "Built and updated prospect lists for outbound campaigns.",
+      "Researched companies and buyer roles to help improve outreach.",
     ],
   },
   {
@@ -53,60 +40,45 @@ const experiences = [
     logo: LifeTime,
     location: "Schaumburg, IL",
     dates: "April 2024 – Present",
-    tag: "Member service, operations, and teamwork",
+    tag: "Customer service and daily operations",
+    current: true,
     bullets: [
-      "Provided member-facing customer service in a fast-paced environment while maintaining accuracy and professionalism.",
-      "Prepared orders according to recipes while keeping a clean and organized workspace.",
-      "Collaborated with staff to support a positive member experience and consistent daily operations.",
-      "Built reliability, communication, and time-management skills while balancing work and school.",
+      "Serve Life Time members and prepare food and drink orders accurately.",
+      "Keep the cafe clean, stocked, and organized during busy shifts.",
+      "Balance a regular work schedule with school and other responsibilities.",
+    ],
+  },
+  {
+    company: "lululemon",
+    role: "Educator",
+    logo: lululemon,
+    location: "Schaumburg, IL",
+    dates: "April 2024 – November 2025",
+    tag: "Customer service and retail sales",
+    bullets: [
+      "Helped guests choose products based on fit, features, and how they planned to use them.",
+      "Built product knowledge and learned how to make useful recommendations without being pushy.",
+      "Worked with the store team in a busy customer-service environment.",
     ],
   },
 ];
 
 const Experience = () => {
   return (
-    <div
-      id="experience"
-      name="experience"
-      className="w-full min-h-screen text-slate-100 bg-none py-16 scroll-mt-24"
-    >
-      <div className="max-w-[1000px] mx-auto px-4">
-        {/* HEADER */}
-        <div className="mb-12">
-          <p className="text-4xl font-bold inline border-b-4 border-red-600">
-            Experience
-          </p>
+    <div className="section-shell bg-transparent text-slate-100">
+      <div className="section-container">
+        <SectionHeader
+          title="Experience"
+          description="I have worked in accounting, sales development, retail, and food service. Each role has given me a different view of how a business works."
+        />
 
-          <p className="py-4 font-semibold text-slate-100 max-w-[850px] leading-relaxed">
-            Experience across accounting, business development, retail, and
-            service—each offering a different view of how organizations serve
-            people and operate well.
-          </p>
-        </div>
-
-        {/* EXPERIENCE LIST */}
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
           {experiences.map((experience) => (
             <ExperienceCard
               key={`${experience.company}-${experience.role}`}
               experience={experience}
             />
           ))}
-        </div>
-
-        {/* CAREER CONNECTION */}
-        <div className="mt-10 bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-6">
-          <h3 className="text-white text-lg font-bold mb-3">
-            What I’m Taking Forward
-          </h3>
-
-          <p className="text-slate-100 text-sm leading-relaxed">
-            These roles have helped me connect classroom concepts with real
-            work: accurate financial records, thoughtful research, clear
-            communication, consistent service, and dependable teamwork. I want
-            to keep building that range while I explore where I can create the
-            most value over time.
-          </p>
         </div>
       </div>
     </div>
@@ -115,48 +87,57 @@ const Experience = () => {
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
-        {/* Company Info */}
-        <div className="flex items-start gap-4">
-          {experience.logo && (
-            <div className="flex-shrink-0">
+    <article className="portfolio-card h-full p-5 transition duration-200 hover:border-slate-500 sm:p-6">
+      <div className="mb-5 flex items-start justify-between gap-4">
+        <div className="flex min-w-0 items-start gap-4">
+          <div className="flex-shrink-0">
+            {experience.logo ? (
               <img
                 src={experience.logo}
-                alt={`${experience.company} logo`}
-                className="w-14 h-14 rounded-lg object-contain bg-white p-1"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="h-14 w-14 rounded-xl bg-white object-contain p-1.5"
               />
-            </div>
-          )}
+            ) : (
+              <div className="brand-type flex h-14 w-14 items-center justify-center rounded-xl border border-red-400/30 bg-red-900/30 font-bold text-red-300">
+                {experience.initials}
+              </div>
+            )}
+          </div>
 
-          <div>
-            <h3 className="text-white text-xl font-bold">
+          <div className="min-w-0">
+            <h3 className="text-xl font-bold text-white">
               {experience.company}
             </h3>
-
-            <p className="text-slate-200 font-semibold">{experience.role}</p>
-
-            <p className="text-slate-200 text-sm">{experience.location}</p>
+            <p className="font-semibold text-slate-200">{experience.role}</p>
+            {experience.location && (
+              <p className="text-slate-300 text-sm">{experience.location}</p>
+            )}
           </div>
         </div>
 
-        <p className="text-slate-100 text-sm font-semibold whitespace-nowrap">
-          {experience.dates}
-        </p>
+        {experience.current && (
+          <span className="rounded-full border border-emerald-400/30 bg-emerald-950/40 px-2.5 py-1 text-xs font-semibold text-emerald-300">
+            Current
+          </span>
+        )}
       </div>
 
-      {experience.tag && (
-        <p className="text-red-400 text-sm font-semibold mt-4">
-          {experience.tag}
-        </p>
-      )}
+      <div className="flex flex-wrap items-center justify-between gap-2 border-y border-white/10 py-3 text-sm">
+        <p className="font-semibold text-red-300">{experience.tag}</p>
+        <p className="font-medium text-slate-300">{experience.dates}</p>
+      </div>
 
-      <ul className="mt-4 pl-5 space-y-2 list-disc text-sm text-slate-100">
+      <ul className="mt-5 space-y-2.5 text-sm leading-relaxed text-slate-200 sm:text-base">
         {experience.bullets.map((bullet) => (
-          <li key={bullet}>{bullet}</li>
+          <li key={bullet} className="flex gap-3">
+            <span className="mt-[.65em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" aria-hidden="true" />
+            <span>{bullet}</span>
+          </li>
         ))}
       </ul>
-    </div>
+    </article>
   );
 };
 

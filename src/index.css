@@ -2,28 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
-
 @layer base {
+    html {
+        scroll-padding-top: 80px;
+        background: #07111f;
+    }
+
     body {
-        @apply font-[Raleway];
+        margin: 0;
+        background: #07111f;
+        color: #f8fafc;
+        font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 16px;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
     }
 
-    li {
-        @apply px-4;
-        @apply-cursor-pointer
+    h1,
+    h2,
+    h3,
+    .brand-type {
+        font-family: 'Raleway', 'Inter', sans-serif;
+    }
+
+    main > section {
+        scroll-margin-top: 80px;
+    }
+
+    ::selection {
+        background: #dc2626;
+        color: #ffffff;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+        outline: 3px solid #f87171;
+        outline-offset: 3px;
     }
 }
 
-.content-div {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 250px;
+@layer components {
+    .portfolio-card {
+        @apply rounded-2xl border border-slate-700/90 bg-[#0a192d]/95 shadow-xl shadow-black/20;
+    }
+
+    .section-shell {
+        @apply w-full py-12 sm:py-14 lg:py-16;
+    }
+
+    .section-container {
+        @apply mx-auto w-full max-w-[1100px] px-5 sm:px-6;
+    }
+
+    .section-tint {
+        @apply border-y border-white/10 bg-[#06101e]/75;
+    }
+
+    .button-primary {
+        @apply inline-flex items-center justify-center rounded-lg border border-red-600 bg-red-600 px-5 py-3 font-semibold text-white shadow-lg transition hover:border-red-700 hover:bg-red-700;
+    }
+
+    .button-secondary {
+        @apply inline-flex items-center justify-center rounded-lg border border-slate-500 bg-slate-900/70 px-5 py-3 font-semibold text-white transition hover:border-slate-300 hover:bg-slate-800;
+    }
+
+    .icon-button {
+        @apply inline-flex h-11 w-11 items-center justify-center rounded-lg border border-slate-700 bg-slate-900 text-slate-200 transition hover:border-red-500 hover:text-red-400;
+    }
+
+    .nav-link-active {
+        color: #f87171;
+    }
+
+    .nav-link-active::after {
+        width: 100%;
+    }
 }
 
-.content-div:hover {
-    background-image: linear-gradient(to right,
-            rgba(112, 157, 255, 0.8),
-            hsla(0, 95%, 24%, 0.8)) !important;
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
 }

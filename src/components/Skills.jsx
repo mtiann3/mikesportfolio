@@ -1,67 +1,96 @@
 import React from "react";
+import {
+  HiOutlineBriefcase,
+  HiOutlineCalculator,
+  HiOutlineChatAlt2,
+  HiOutlineDesktopComputer,
+} from "react-icons/hi";
+import SectionHeader from "./SectionHeader";
+
+const skillGroups = [
+  {
+    title: "Accounting & Business",
+    icon: HiOutlineCalculator,
+    skills: [
+      "Accounting fundamentals",
+      "Transaction entries",
+      "Bank reconciliations",
+      "Microsoft Excel",
+      "Business analysis",
+      "Business law coursework",
+    ],
+  },
+  {
+    title: "Communication & Service",
+    icon: HiOutlineChatAlt2,
+    skills: [
+      "Professional communication",
+      "Account research",
+      "Prospect research",
+      "Customer service",
+      "Team collaboration",
+    ],
+  },
+  {
+    title: "Technical & Analytical",
+    icon: HiOutlineDesktopComputer,
+    skills: [
+      "Microsoft Word",
+      "Microsoft PowerPoint",
+      "Python",
+      "JavaScript",
+      "React",
+    ],
+  },
+  {
+    title: "Tools & Workflows",
+    icon: HiOutlineBriefcase,
+    skills: [
+      "Salesforce",
+      "Google Workspace",
+      "Slack",
+      "Data organization",
+      "Research workflows",
+      "Information systems",
+    ],
+  },
+];
 
 const Skills = () => {
   return (
-    <div
-      id="skills"
-      className="w-full min-h-screen bg-none text-slate-100 py-16"
-    >
-      <div className="max-w-[1000px] mx-auto px-4">
+    <div className="section-shell section-tint text-slate-100">
+      <div className="section-container">
+        <SectionHeader
+          title="Skills"
+          description="Tools and skills I have used in class, at work, and on projects."
+        />
 
-        {/* HEADER */}
-        <div className="mb-10">
-          <p className="text-4xl font-bold inline border-b-4 border-red-600">
-            Skills
-          </p>
+        <div className="grid gap-5 md:grid-cols-2">
+          {skillGroups.map((group) => {
+            const Icon = group.icon;
+            return (
+              <article
+                key={group.title}
+                className="portfolio-card p-5 transition duration-200 hover:border-slate-500 sm:p-6"
+              >
+                <div className="flex items-center gap-3 border-b border-white/10 pb-4">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-red-500/10 text-xl text-red-400">
+                    <Icon />
+                  </span>
+                  <h3 className="text-lg font-bold text-white">{group.title}</h3>
+                </div>
 
-          <p className="py-4 font-medium text-slate-100">
-            Skills and working knowledge developed through coursework,
-            internships, projects, and customer-facing roles
-          </p>
-        </div>
-
-
-        {/* SKILLS */}
-        <div className="space-y-10">
-
-          <Section title="Accounting & Business Foundation">
-            <Skill title="Accounting Fundamentals" />
-            <Skill title="Transaction Entries" />
-            <Skill title="Bank Reconciliations" />
-            <Skill title="Microsoft Excel" />
-            <Skill title="Business Analysis" />
-            <Skill title="Business Law Coursework" />
-          </Section>
-
-
-          <Section title="Client Service & Communication">
-            <Skill title="Professional Communication" />
-            <Skill title="Account Research" />
-            <Skill title="Prospect Research" />
-            <Skill title="Business Communication" />
-            <Skill title="Customer Service" />
-            <Skill title="Team Collaboration" />
-          </Section>
-
-
-          <Section title="Technical & Analytical Tools">
-            <Skill title="Microsoft Word" />
-            <Skill title="Microsoft PowerPoint" />
-            <Skill title="Python" />
-            <Skill title="JavaScript" />
-            <Skill title="React" />
-          </Section>
-
-
-          <Section title="Professional Tools & Workflows">
-            <Skill title="Salesforce" />
-            <Skill title="Google Workspace" />
-            <Skill title="Slack" />
-            <Skill title="Data Organization" />
-            <Skill title="Research Workflows" />
-            <Skill title="Information Systems" />
-          </Section>
-
+                <ul className="mt-5 grid grid-cols-1 gap-x-5 gap-y-2.5 text-sm text-slate-200 sm:text-base lg:grid-cols-2">
+                  {group.skills.map((skill) => (
+                    <li key={skill} className="flex items-start gap-2.5">
+                      <span className="mt-[.65em] h-1.5 w-1.5 flex-shrink-0 rounded-full bg-red-500" aria-hidden="true" />
+                      <span>{skill}</span>
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            );
+          })}
         </div>
       </div>
     </div>
@@ -69,56 +98,3 @@ const Skills = () => {
 };
 
 export default Skills;
-
-
-/* SECTION */
-const Section = ({ title, children }) => {
-  return (
-    <div>
-      <h2 className="text-xl font-semibold text-white mb-4">
-        {title}
-      </h2>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
-        {children}
-      </div>
-    </div>
-  );
-};
-
-
-/* SKILL CARD */
-const Skill = ({ title }) => {
-  return (
-    <div
-      className="
-        bg-slate-950/95
-        border
-        border-white/10
-        backdrop-blur-sm
-        shadow-lg
-        shadow-black/40
-        rounded-md
-        p-4
-        flex
-        items-center
-        justify-center
-        text-center
-        min-h-[80px]
-
-        transition
-        duration-300
-
-        hover:scale-105
-        hover:-translate-y-1
-     
-
-        cursor-pointer
-      "
-    >
-      <p className="text-sm sm:text-base text-slate-200 font-medium">
-        {title}
-      </p>
-    </div>
-  );
-};

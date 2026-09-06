@@ -1,6 +1,8 @@
 import React from "react";
 import Harper from "../assets/harpercollege_logo.jpg";
 import Elmhurst from "../assets/elmhurstuniversity_logo.jpg";
+import { HiOutlineBadgeCheck } from "react-icons/hi";
+import SectionHeader from "./SectionHeader";
 
 const educationItems = [
   {
@@ -9,8 +11,7 @@ const educationItems = [
     location: "Elmhurst, IL",
     degree: "Bachelor of Science in Accounting; Second Major in Finance",
     dates: "Expected May 2028",
-    highlight:
-      "Junior studying finance and accounting while exploring business, advisory, and ownership paths.",
+    highlight: "Junior | Finance and Accounting",
     coursework: [
       "Intermediate Accounting I",
       "Principles of Marketing",
@@ -43,57 +44,36 @@ const professionalDevelopment = [
   {
     title: "Securities Industry Essentials (SIE) Exam",
     status: "Passed",
-    date: "Completed",
     description:
-      "Passed the FINRA SIE exam, demonstrating foundational knowledge of securities products, risks, market structure, customer accounts, and industry regulation.",
+      "Passed the FINRA SIE, which covers securities products, risks, market structure, customer accounts, and industry rules.",
   },
 ];
 
 const Education = () => {
   return (
-    <div
-      id="education"
-      name="education"
-      className="w-full min-h-screen text-slate-100 bg-none py-16 scroll-mt-24"
-    >
-      <div className="max-w-[1000px] mx-auto px-4">
-        {/* HEADER */}
-        <div className="mb-12">
-          <p className="text-4xl font-bold inline border-b-4 border-red-600">
-            Education
-          </p>
+    <div className="section-shell section-tint text-slate-100">
+      <div className="section-container">
+        <SectionHeader
+          title="Education"
+          description="I earned my associate degree at Harper College and transferred to Elmhurst University, where I am pursuing degrees in accounting and finance."
+        />
 
-          <p className="py-4 font-semibold text-slate-100 max-w-[850px] leading-relaxed">
-            Academic work across accounting, finance, business, economics, and
-            information systems, supported by practical experience outside the
-            classroom.
-          </p>
-        </div>
-
-        {/* EDUCATION CARDS */}
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
           {educationItems.map((item) => (
             <EducationCard key={item.school} item={item} />
           ))}
         </div>
 
-        {/* PROFESSIONAL DEVELOPMENT */}
-        <div className="mt-12">
-          <h2 className="text-2xl font-bold text-white mb-4">
+        <div className="mt-9">
+          <h3 className="mb-4 text-xl font-bold text-white">
             Professional Development
-          </h2>
+          </h3>
 
-          <p className="text-sm text-slate-100 mb-6 max-w-[850px] leading-relaxed">
-            A completed industry exam that complements my finance coursework
-            without defining a single long-term career path.
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="max-w-2xl">
             {professionalDevelopment.map((item) => (
               <DevelopmentCard key={item.title} item={item} />
             ))}
           </div>
-
         </div>
       </div>
     </div>
@@ -102,16 +82,17 @@ const Education = () => {
 
 const EducationCard = ({ item }) => {
   return (
-    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-xl p-6 hover:scale-[1.01] transition duration-300">
-      <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
-        {/* School Info + Logo */}
+    <article className="portfolio-card h-full p-5 transition duration-200 hover:border-slate-500 sm:p-6">
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
         <div className="flex items-start gap-4">
           {item.logo && (
             <div className="flex-shrink-0">
               <img
                 src={item.logo}
-                alt={`${item.school} logo`}
-                className="w-16 h-16 rounded-xl object-contain bg-white p-2"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                className="h-16 w-16 rounded-xl bg-white object-contain p-2"
               />
             </div>
           )}
@@ -119,18 +100,16 @@ const EducationCard = ({ item }) => {
           <div>
             <h3 className="text-white text-xl font-bold">{item.school}</h3>
 
-            <p className="text-slate-200 text-sm">{item.location}</p>
+            <p className="text-slate-300 text-sm">{item.location}</p>
           </div>
         </div>
 
-        {/* Dates */}
-        <p className="text-slate-100 text-sm font-semibold whitespace-nowrap">
+        <p className="whitespace-nowrap text-sm font-semibold text-slate-300">
           {item.dates}
         </p>
       </div>
 
-      {/* Degree Information */}
-      <div className="mt-4">
+      <div className="mt-5 border-t border-white/10 pt-4">
         <p className="text-slate-100 font-bold">{item.degree}</p>
 
         {item.highlight && (
@@ -140,7 +119,6 @@ const EducationCard = ({ item }) => {
         )}
       </div>
 
-      {/* Coursework */}
       {item.coursework?.length > 0 && (
         <div className="mt-5">
           <p className="text-white font-bold text-sm mb-3">
@@ -151,7 +129,7 @@ const EducationCard = ({ item }) => {
             {item.coursework.map((course) => (
               <span
                 key={course}
-                className="text-xs text-slate-200 bg-slate-800/90 border border-white/10 rounded-full px-3 py-2"
+                className="rounded-full border border-white/10 bg-slate-800/90 px-3 py-1.5 text-xs text-slate-200"
               >
                 {course}
               </span>
@@ -159,26 +137,27 @@ const EducationCard = ({ item }) => {
           </div>
         </div>
       )}
-    </div>
+    </article>
   );
 };
 
 const DevelopmentCard = ({ item }) => {
   return (
-    <div className="bg-slate-950/95 border border-white/10 backdrop-blur-sm shadow-lg shadow-black/40 rounded-md p-5 hover:scale-[1.02] duration-300">
-      <div className="flex items-center justify-between gap-3 mb-3">
-        <p className="text-xs text-red-400 font-bold uppercase tracking-wide">
-          {item.status}
+    <div className="portfolio-card flex flex-col gap-4 p-5 transition duration-200 hover:border-slate-500 sm:flex-row sm:items-center">
+      <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl text-emerald-300">
+        <HiOutlineBadgeCheck />
+      </div>
+      <div>
+        <div className="flex flex-wrap items-center gap-3">
+          <h4 className="text-lg font-bold text-white">{item.title}</h4>
+          <span className="rounded-full border border-emerald-400/30 bg-emerald-950/40 px-2.5 py-1 text-xs font-semibold text-emerald-300">
+            {item.status}
+          </span>
+        </div>
+        <p className="mt-2 text-sm leading-relaxed text-slate-300 sm:text-base">
+          {item.description}
         </p>
       </div>
-
-      <h3 className="text-white text-lg font-bold">{item.title}</h3>
-
-      <p className="text-slate-200 text-sm mt-1">{item.date}</p>
-
-      <p className="text-slate-100 text-sm leading-relaxed mt-4">
-        {item.description}
-      </p>
     </div>
   );
 };

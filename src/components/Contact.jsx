@@ -1,90 +1,60 @@
 import React from "react";
-import Linkedin2 from "../assets/linkedin2.png";
-import Resume from "../assets/resume2.jpg";
 import ResumePDF from "../assets/Mike Iannotti Resume.pdf";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdOutlineFileDownload } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import SectionHeader from "./SectionHeader";
 
 const Contact = () => {
   return (
-    <section
-      name="contact"
-      className="w-full  text-slate-100 py-20"
-    >
-      <div className="max-w-[900px] h-screen mx-auto px-6">
-        {/* Heading */}
-        <div className="mb-12">
-          <h2 className="text-4xl font-bold inline border-b-4 border-red-600">
-            Contact
-          </h2>
-          <p className="mt-4 text-slate-200 max-w-lg">
-            Feel free to connect with me professionally, download my resume, or
-            reach out by email.
-          </p>
-        </div>
+    <div className="section-shell bg-transparent text-slate-100">
+      <div className="section-container">
+        <SectionHeader
+          title="Contact"
+          description="Connect with me on LinkedIn, download my resume, or send me an email."
+        />
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          {/* LinkedIn */}
-          <a
-            href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
-          >
-            <img
-              src={Linkedin2}
-              alt="LinkedIn"
-              className="w-20 h-20 object-contain"
-            />
+        <div className="portfolio-card overflow-hidden">
+          <div className="grid gap-7 p-5 sm:p-7 lg:grid-cols-[1fr_auto] lg:items-center lg:p-8">
+            <div>
+              <p className="brand-type text-xl font-bold text-white sm:text-2xl">
+                Let’s connect.
+              </p>
+              <p className="mt-2 max-w-xl text-base leading-relaxed text-slate-300">
+                I’m always glad to talk about business, internships, projects,
+                or new opportunities.
+              </p>
+            </div>
 
-            <h3 className="mt-6 text-xl font-semibold text-white">
-              LinkedIn
-            </h3>
-
-            <p className="mt-2 text-sm text-slate-200">
-              View my professional profile and connect with me.
-            </p>
-          </a>
-
-          {/* Resume */}
-          <a
-            href={ResumePDF}
-            download="MikeIannottiResume.pdf"
-            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
-          >
-            <img
-              src={Resume}
-              alt="Resume"
-              className="w-20 h-20 object-contain"
-            />
-
-            <h3 className="mt-6 text-xl font-semibold text-white">
-              Resume
-            </h3>
-
-            <p className="mt-2 text-sm text-slate-200">
-              Download a copy of my resume in PDF format.
-            </p>
-          </a>
-
-          {/* Email */}
-          <a
-            href="mailto:miannotti06@gmail.com"
-            className="bg-slate-950/95 rounded-xl border border-gray-700 hover:border-red-500 transition-all duration-300 p-8 flex flex-col items-center text-center hover:-translate-y-1"
-          >
-            <MdEmail size={72} className="text-white" />
-
-            <h3 className="mt-6 text-xl font-semibold text-white">
-              Email
-            </h3>
-
-            <p className="mt-2 text-sm text-slate-200">
-              Have a question or opportunity? I'd be happy to hear from you.
-            </p>
-          </a>
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+              <a
+                href="mailto:miannotti06@gmail.com"
+                className="button-secondary w-full gap-2 sm:w-auto"
+              >
+                <MdEmail className="text-xl" />
+                Email Me
+              </a>
+              <a
+                href="https://www.linkedin.com/in/michael-iannotti-5a9043417"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="button-secondary w-full gap-2 sm:w-auto"
+              >
+                <FaLinkedin className="text-lg" />
+                LinkedIn
+              </a>
+              <a
+                href={ResumePDF}
+                download="Michael_Iannotti_Resume.pdf"
+                className="button-secondary w-full gap-2 sm:w-auto"
+              >
+                <MdOutlineFileDownload className="text-xl" />
+                Resume
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

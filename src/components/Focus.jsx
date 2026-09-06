@@ -1,80 +1,62 @@
 import React from "react";
+import {
+  HiOutlineCalculator,
+  HiOutlineOfficeBuilding,
+  HiOutlineUserGroup,
+} from "react-icons/hi";
+import SectionHeader from "./SectionHeader";
 
 const focusAreas = [
   {
-    title: "Business & Financial Fundamentals",
+    title: "Accounting & Finance",
+    icon: HiOutlineCalculator,
     description:
-      "Building practical accounting and finance skills while learning how real businesses make decisions, manage resources, and create value.",
+      "I want a strong understanding of financial statements, cash flow, taxes, and the day-to-day decisions businesses make.",
   },
   {
     title: "Ownership & Entrepreneurship",
+    icon: HiOutlineOfficeBuilding,
     description:
-      "Interested in what it takes to evaluate, launch, and responsibly grow a business—from the numbers to the operating details.",
+      "I am interested in how an idea becomes a real business, including the financial risk, daily operations, and responsibility that come with ownership.",
   },
   {
-    title: "People, Leadership & Service",
+    title: "Leadership & Service",
+    icon: HiOutlineUserGroup,
     description:
-      "Drawn to work built on trust, clear communication, strong teams, and a positive impact on clients, coworkers, and the community.",
+      "I enjoy working with people and want to become a better communicator, teammate, and leader.",
   },
 ];
 
 const Focus = () => {
   return (
-    <div
-      id="focus"
-      name="focus"
-      className="w-full min-h-screen text-slate-100 bg-none py-16 scroll-mt-24"
-    >
-      <div className="max-w-[1000px] mx-auto px-4">
+    <div className="section-shell section-tint text-slate-200">
+      <div className="section-container">
+        <SectionHeader
+          title="Interests"
+          description="The areas I am building toward through school, work, and personal projects."
+        />
 
-        {/* Section Header */}
-        <div className="mb-12">
-          <p className="text-4xl font-bold inline border-b-4 border-red-600">
-            Interests
-          </p>
-
-          <p className="py-4 font-medium text-slate-100 max-w-3xl">
-            I am exploring several paths rather than forcing an early answer.
-            These are the themes connecting what I study, the work I pursue,
-            and the projects I choose.
-          </p>
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:gap-5">
+          {focusAreas.map((area) => {
+            const Icon = area.icon;
+            return (
+              <div
+                key={area.title}
+                className="portfolio-card border-t-2 border-t-red-500 p-5 transition duration-200 hover:-translate-y-1 hover:border-slate-500 lg:p-6"
+              >
+                <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-red-400">
+                  <Icon />
+                </div>
+                <h3 className="mb-3 text-lg font-bold text-white">
+                  {area.title}
+                </h3>
+                <p className="text-base leading-relaxed text-slate-300">
+                  {area.description}
+                </p>
+              </div>
+            );
+          })}
         </div>
-
-
-        {/* Focus Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
-          {focusAreas.map((area) => (
-            <div
-              key={area.title}
-              className="
-                bg-slate-950/95
-                border
-                border-white/10
-                backdrop-blur-sm
-                shadow-lg
-                shadow-black/40
-                rounded-md
-                p-6
-                hover:scale-[1.02]
-                transition
-                duration-300
-              "
-            >
-
-              <h3 className="text-white text-lg font-bold mb-3">
-                {area.title}
-              </h3>
-
-              <p className="text-slate-200 text-sm leading-relaxed">
-                {area.description}
-              </p>
-
-            </div>
-          ))}
-
-        </div>
-
       </div>
     </div>
   );
