@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.bb1606fa.css",
-    "main.js": "/static/js/main.36c4c72d.js",
-    "static/media/chicago.jpg": "/static/media/chicago.443e4c79a6b8c3f1ee12.jpg",
-    "static/media/DSC07129.JPG": "/static/media/DSC07129.f3e469925b4fe4a08a4f.JPG",
-    "static/media/athleteiq.png": "/static/media/athleteiq.3008e10aaadba2088a92.png",
-    "static/media/app1.png": "/static/media/app1.b831ef2f3e76a11f6a1e.png",
+    "main.css": "/static/css/main.99260be4.css",
+    "main.js": "/static/js/main.f2545c86.js",
+    "static/media/chicago.webp": "/static/media/chicago.6b339c98fb8d1e862c23.webp",
     "static/media/Mike Iannotti Resume.pdf": "/static/media/Mike Iannotti Resume.4ce8ed745ac7716507ec.pdf",
-    "static/media/logo3.png": "/static/media/logo3.56cfa4a9c19a9f4bba48.png",
-    "static/media/resume2.jpg": "/static/media/resume2.c1cfbc818d2b1ba7f06c.jpg",
-    "static/media/linkedin2.png": "/static/media/linkedin2.68ac41e1459436bfd38f.png",
+    "static/media/michael-iannotti.webp": "/static/media/michael-iannotti.502373d442315d44624a.webp",
+    "static/media/android-nutrition.webp": "/static/media/android-nutrition.9162c25876199a8ebf34.webp",
+    "static/media/athleteiq.webp": "/static/media/athleteiq.420640cf5301ac9209ba.webp",
     "index.html": "/index.html",
-    "main.bb1606fa.css.map": "/static/css/main.bb1606fa.css.map",
-    "main.36c4c72d.js.map": "/static/js/main.36c4c72d.js.map"
+    "main.99260be4.css.map": "/static/css/main.99260be4.css.map",
+    "main.f2545c86.js.map": "/static/js/main.f2545c86.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb1606fa.css",
-    "static/js/main.36c4c72d.js"
+    "static/css/main.99260be4.css",
+    "static/js/main.f2545c86.js"
   ]
 }
