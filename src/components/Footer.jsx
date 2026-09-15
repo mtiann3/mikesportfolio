@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import { FaArrowUp, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
@@ -18,38 +17,27 @@ const Footer = () => {
             href="https://github.com/mtiann3"
             target="_blank"
             rel="noreferrer"
-            aria-label="GitHub profile"
+            aria-label="GitHub profile (opens in a new tab)"
             className="icon-button"
           >
-            <FaGithub />
+            <FaGithub aria-hidden="true" />
           </a>
           <a
             href="https://linkedin.com/in/michael-iannotti-5a9043417"
             target="_blank"
             rel="noreferrer"
-            aria-label="LinkedIn profile"
+            aria-label="LinkedIn profile (opens in a new tab)"
             className="icon-button"
           >
-            <FaLinkedin />
+            <FaLinkedin aria-hidden="true" />
           </a>
-          <Link
-            to="home"
-            smooth={false}
-            duration={0}
-            offset={-80}
-            role="link"
-            tabIndex={0}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" || event.key === " ") {
-                event.preventDefault();
-                event.currentTarget.click();
-              }
-            }}
+          <a
+            href="#home"
             aria-label="Back to top"
             className="icon-button cursor-pointer"
           >
-            <FaArrowUp />
-          </Link>
+            <FaArrowUp aria-hidden="true" />
+          </a>
         </div>
       </div>
     </footer>

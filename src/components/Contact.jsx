@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="section-container">
         <SectionHeader
           title="Contact"
-          description="Connect with me on LinkedIn, download my resume, or send me an email."
+          description="Send me an email, connect on LinkedIn, or download my resume."
         />
 
         <div className="portfolio-card overflow-hidden">
@@ -23,14 +23,17 @@ const Contact = () => {
                 I’m always glad to talk about business, internships, projects,
                 or new opportunities.
               </p>
+              <a href="mailto:miannotti06@gmail.com" className="mt-3 inline-flex min-h-[44px] items-center break-all text-sm text-slate-200 underline decoration-slate-500 underline-offset-4 transition hover:text-red-300">
+                miannotti06@gmail.com
+              </a>
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href="mailto:miannotti06@gmail.com"
-                className="button-secondary w-full gap-2 sm:w-auto"
+                className="button-primary w-full gap-2 sm:w-auto"
               >
-                <MdEmail className="text-xl" />
+                <MdEmail className="text-xl" aria-hidden="true" />
                 Email Me
               </a>
               <a
@@ -39,16 +42,18 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="button-secondary w-full gap-2 sm:w-auto"
               >
-                <FaLinkedin className="text-lg" />
+                <FaLinkedin className="text-lg" aria-hidden="true" />
                 LinkedIn
+                <span className="sr-only"> (opens in a new tab)</span>
               </a>
               <a
                 href={ResumePDF}
                 download="Michael_Iannotti_Resume.pdf"
                 className="button-secondary w-full gap-2 sm:w-auto"
               >
-                <MdOutlineFileDownload className="text-xl" />
+                <MdOutlineFileDownload className="text-xl" aria-hidden="true" />
                 Resume
+                <span className="sr-only"> (download PDF)</span>
               </a>
             </div>
           </div>

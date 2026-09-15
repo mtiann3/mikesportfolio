@@ -38,10 +38,12 @@ const About = () => {
               practical experience to prepare for those goals.
             </p>
             <p>
-              I plan to evaluate an Italian deli and specialty food idea called
-              Gemelli with my brother through a finance, accounting, analytics,
-              and information systems feasibility study. It is a proposed
-              project, not an operating business.
+              I am independently developing a feasibility project around
+              Gemelli, an Italian specialty food business concept inspired by
+              conversations with my twin brother. I plan to explore whether a
+              small Italian foods shop could be a practical starting point and
+              how the concept could grow over time. Gemelli is a proposed
+              concept, not an operating business.
             </p>
             <p>
               Outside of school and work, I enjoy working out, traveling,

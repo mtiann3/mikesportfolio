@@ -42,12 +42,12 @@ const Focus = () => {
             return (
               <div
                 key={area.title}
-                className="portfolio-card border-t-2 border-t-red-500 p-5 transition duration-200 hover:-translate-y-1 hover:border-slate-500 lg:p-6"
+                className="portfolio-card border-t-2 border-t-red-500 p-5 lg:p-6"
               >
                 <div className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-red-400">
-                  <Icon />
+                  <Icon aria-hidden="true" />
                 </div>
-                <h3 className="mb-3 text-lg font-bold text-white">
+                <h3 className="mb-3 text-lg font-bold text-white md:min-h-[3.5rem]">
                   {area.title}
                 </h3>
                 <p className="text-base leading-relaxed text-slate-300">

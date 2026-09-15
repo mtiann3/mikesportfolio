@@ -1,14 +1,9 @@
 import React from "react";
 import { HiArrowNarrowRight, HiOutlineDownload } from "react-icons/hi";
-import { Link } from "react-scroll";
 import Me from "../assets/michael-iannotti.webp";
 import Resume from "../assets/Mike Iannotti Resume.pdf";
 
 const Home = () => {
-  const prefersReducedMotion =
-    typeof window !== "undefined" &&
-    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   return (
     <div className="w-full border-b border-white/10 bg-gradient-to-b from-black/5 to-[#06101e]/40 lg:min-h-[calc(100vh-80px)]">
       <div className="section-container grid items-center gap-10 py-12 sm:py-14 md:grid-cols-[1.35fr_.8fr] lg:min-h-[calc(100vh-80px)] lg:py-16">
@@ -17,13 +12,13 @@ const Home = () => {
             Junior at Elmhurst University
           </p>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05] tracking-tight drop-shadow-lg">
+          <h1 id="home-heading" className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05] tracking-tight drop-shadow-lg">
             Michael Iannotti
           </h1>
 
-          <h2 className="mt-4 max-w-[700px] text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-200 leading-snug">
-            Finance and Accounting Student at Elmhurst University
-          </h2>
+          <p className="brand-type mt-4 max-w-[700px] text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-200 leading-snug">
+            Finance and Accounting Student
+          </p>
 
           <p className="max-w-[680px] py-5 text-base sm:text-lg text-slate-200 leading-relaxed">
             I currently intern part time at WGTaxLaw and work at Life Time. My
@@ -33,34 +28,24 @@ const Home = () => {
           </p>
 
           <div className="mt-1 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
-            <Link
-              to="experience"
-              smooth={!prefersReducedMotion}
-              duration={prefersReducedMotion ? 0 : 220}
-              offset={-80}
-              role="link"
-              tabIndex={0}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                  event.preventDefault();
-                  event.currentTarget.click();
-                }
-              }}
+            <a
+              href="#experience"
               className="button-primary group w-full cursor-pointer sm:w-auto"
             >
               View Experience
               <span className="group-hover:translate-x-1 duration-300">
-                <HiArrowNarrowRight className="ml-3" />
+                <HiArrowNarrowRight className="ml-3" aria-hidden="true" />
               </span>
-            </Link>
+            </a>
 
             <a
               href={Resume}
               download="Michael_Iannotti_Resume.pdf"
               className="button-secondary w-full gap-2 sm:w-auto"
             >
-              <HiOutlineDownload className="text-lg" />
+              <HiOutlineDownload className="text-lg" aria-hidden="true" />
               Download Resume
+              <span className="sr-only"> (PDF)</span>
             </a>
           </div>
 

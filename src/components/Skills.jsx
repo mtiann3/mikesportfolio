@@ -71,11 +71,11 @@ const Skills = () => {
             return (
               <article
                 key={group.title}
-                className="portfolio-card p-5 transition duration-200 hover:border-slate-500 sm:p-6"
+                className="portfolio-card p-5 sm:p-6"
               >
                 <div className="flex items-center gap-3 border-b border-white/10 pb-4">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-red-500/10 text-xl text-red-400">
-                    <Icon />
+                  <span className="inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-lg bg-red-500/10 text-xl text-red-400">
+                    <Icon aria-hidden="true" />
                   </span>
                   <h3 className="text-lg font-bold text-white">{group.title}</h3>
                 </div>

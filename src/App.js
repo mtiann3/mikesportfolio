@@ -32,34 +32,34 @@ function App() {
         </a>
         <Navbar />
 
-        <main id="main-content" tabIndex={-1} className="pt-[80px]">
-          <section id="home">
+        <main id="main-content" tabIndex={-1}>
+          <section id="home" tabIndex={-1} aria-labelledby="home-heading">
             <Home />
           </section>
 
-          <section id="about">
+          <section id="about" tabIndex={-1} aria-labelledby="about-heading">
             <About />
           </section>
-          <section id="focus">
+          <section id="focus" tabIndex={-1} aria-labelledby="interests-heading">
             <Focus />
           </section>
 
-          <section id="experience">
+          <section id="experience" tabIndex={-1} aria-labelledby="experience-heading">
             <Experience />
           </section>
-          <section id="education">
+          <section id="education" tabIndex={-1} aria-labelledby="education-heading">
             <Education />
           </section>
 
-          <section id="projects">
+          <section id="projects" tabIndex={-1} aria-labelledby="projects-heading">
             <Projects />
           </section>
 
-          <section id="skills">
+          <section id="skills" tabIndex={-1} aria-labelledby="skills-heading">
             <Skills />
           </section>
 
-          <section id="contact">
+          <section id="contact" tabIndex={-1} aria-labelledby="contact-heading">
             <Contact />
           </section>
         </main>

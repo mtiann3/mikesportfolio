@@ -1,5 +1,3 @@
-// src/components/Work.jsx
-
 import React from "react";
 import Cyera from "../assets/cyera_logo.jpg";
 import lululemon from "../assets/lululemon_logo.jpg";
@@ -87,8 +85,8 @@ const Experience = () => {
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <article className="portfolio-card h-full p-5 transition duration-200 hover:border-slate-500 sm:p-6">
-      <div className="mb-5 flex items-start justify-between gap-4">
+    <article className="portfolio-card h-full p-5 sm:p-6">
+      <div className="mb-5">
         <div className="flex min-w-0 items-start gap-4">
           <div className="flex-shrink-0">
             {experience.logo ? (
@@ -106,22 +104,23 @@ const ExperienceCard = ({ experience }) => {
             )}
           </div>
 
-          <div className="min-w-0">
-            <h3 className="text-xl font-bold text-white">
-              {experience.company}
-            </h3>
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-2">
+              <h3 className="text-xl font-bold text-white">
+                {experience.company}
+              </h3>
+              {experience.current && (
+                <span className="rounded-full border border-emerald-400/30 bg-emerald-950/40 px-2.5 py-1 text-xs font-semibold text-emerald-300">
+                  Current
+                </span>
+              )}
+            </div>
             <p className="font-semibold text-slate-200">{experience.role}</p>
             {experience.location && (
               <p className="text-slate-300 text-sm">{experience.location}</p>
             )}
           </div>
         </div>
-
-        {experience.current && (
-          <span className="rounded-full border border-emerald-400/30 bg-emerald-950/40 px-2.5 py-1 text-xs font-semibold text-emerald-300">
-            Current
-          </span>
-        )}
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-2 border-y border-white/10 py-3 text-sm">

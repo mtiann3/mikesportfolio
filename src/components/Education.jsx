@@ -55,7 +55,7 @@ const Education = () => {
       <div className="section-container">
         <SectionHeader
           title="Education"
-          description="I earned my associate degree at Harper College and transferred to Elmhurst University, where I am pursuing degrees in accounting and finance."
+          description="I earned my associate degree at Harper College and transferred to Elmhurst University, where I am studying accounting and finance."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -82,9 +82,9 @@ const Education = () => {
 
 const EducationCard = ({ item }) => {
   return (
-    <article className="portfolio-card h-full p-5 transition duration-200 hover:border-slate-500 sm:p-6">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-        <div className="flex items-start gap-4">
+    <article className="portfolio-card h-full p-5 sm:p-6">
+      <div className="flex flex-wrap items-start justify-between gap-4">
+        <div className="flex min-w-0 items-start gap-4">
           {item.logo && (
             <div className="flex-shrink-0">
               <img
@@ -125,16 +125,16 @@ const EducationCard = ({ item }) => {
             Relevant Coursework
           </p>
 
-          <div className="flex flex-wrap gap-2">
+          <ul className="flex flex-wrap gap-2">
             {item.coursework.map((course) => (
-              <span
+              <li
                 key={course}
                 className="rounded-full border border-white/10 bg-slate-800/90 px-3 py-1.5 text-xs text-slate-200"
               >
                 {course}
-              </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       )}
     </article>
@@ -143,9 +143,9 @@ const EducationCard = ({ item }) => {
 
 const DevelopmentCard = ({ item }) => {
   return (
-    <div className="portfolio-card flex flex-col gap-4 p-5 transition duration-200 hover:border-slate-500 sm:flex-row sm:items-center">
+    <div className="portfolio-card flex flex-col gap-4 p-5 sm:flex-row sm:items-center">
       <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl text-emerald-300">
-        <HiOutlineBadgeCheck />
+        <HiOutlineBadgeCheck aria-hidden="true" />
       </div>
       <div>
         <div className="flex flex-wrap items-center gap-3">
