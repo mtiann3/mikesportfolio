@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.99260be4.css",
-    "main.js": "/static/js/main.1064d1be.js",
+    "main.js": "/static/js/main.96d216e2.js",
     "static/media/chicago.webp": "/static/media/chicago.6b339c98fb8d1e862c23.webp",
     "static/media/Mike Iannotti Resume.pdf": "/static/media/Mike Iannotti Resume.4ce8ed745ac7716507ec.pdf",
     "static/media/michael-iannotti.webp": "/static/media/michael-iannotti.502373d442315d44624a.webp",
@@ -9,10 +9,10 @@
     "index.html": "/index.html",
     "static/media/athleteiq.webp": "/static/media/athleteiq.420640cf5301ac9209ba.webp",
     "main.99260be4.css.map": "/static/css/main.99260be4.css.map",
-    "main.1064d1be.js.map": "/static/js/main.1064d1be.js.map"
+    "main.96d216e2.js.map": "/static/js/main.96d216e2.js.map"
   },
   "entrypoints": [
     "static/css/main.99260be4.css",
-    "static/js/main.1064d1be.js"
+    "static/js/main.96d216e2.js"
   ]
 }
