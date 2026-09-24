@@ -68,7 +68,7 @@ const Navbar = () => {
   const navLinks = [
     { to: "home", label: "Home" },
     { to: "about", label: "About" },
-    { to: "focus", label: "Focus Areas" },
+    { to: "focus", label: "Focus" },
     { to: "experience", label: "Experience" },
     { to: "education", label: "Education" },
     { to: "projects", label: "Projects" },
