@@ -11,19 +11,19 @@ const focusAreas = [
     title: "Accounting & Finance",
     icon: HiOutlineCalculator,
     description:
-      "I want a strong understanding of financial statements, cash flow, taxes, and the day-to-day decisions businesses make.",
+      "Building an understanding of financial statements, accounting, tax, cash flow, margins, and budgeting to support business decisions.",
+  },
+  {
+    title: "Business Operations",
+    icon: HiOutlineUserGroup,
+    description:
+      "Learning how a business runs each day, from working with customers and employees to managing vendors, pricing, and finances.",
   },
   {
     title: "Ownership & Entrepreneurship",
     icon: HiOutlineOfficeBuilding,
     description:
-      "I am interested in how an idea becomes a real business, including the financial risk, daily operations, and responsibility that come with ownership.",
-  },
-  {
-    title: "Leadership & Service",
-    icon: HiOutlineUserGroup,
-    description:
-      "I enjoy working with people and want to become a better communicator, teammate, and leader.",
+      "Exploring durable, locally rooted businesses and the skills and responsibilities involved in eventually owning and operating a small family business.",
   },
 ];
 
@@ -32,7 +32,7 @@ const Focus = () => {
     <div className="section-shell section-tint text-slate-200">
       <div className="section-container">
         <SectionHeader
-          title="Interests"
+          title="Focus Areas"
           description="The areas I am building toward through school, work, and personal projects."
         />
 

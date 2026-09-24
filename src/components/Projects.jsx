@@ -12,14 +12,30 @@ const appliedProjects = [
     title: "Gemelli Business Feasibility Project",
     tag: "Independent Project",
     status: "Planned",
-    desc: "My brother and I plan to study whether an Italian deli and specialty food shop could work as a business. The project will apply finance, accounting, analytics, and information systems to a real idea.",
-    tools: "Finance • Accounting • Analytics • Information Systems",
+    desc: "An exploratory project to study the feasibility of a small Italian specialty food market. I plan to apply accounting, finance, operations, and market research to understand startup costs, pricing, margins, customer demand, staffing, and whether the business could support itself over time.",
+    tools: "Accounting • Finance • Operations • Market Research",
+    note: "Planned feasibility study; no commitment to launch or expand a business.",
     deliverables: [
       "Local market and competitor research",
       "Startup and operating cost estimates",
-      "Revenue, margin, and cash-flow scenarios",
-      "Operating requirements and information-system needs",
-      "A go / no-go decision based on what we find",
+      "Revenue, margin, and cash flow scenarios",
+      "Pricing, staffing, and daily operations",
+      "A feasibility recommendation based on the findings",
+    ],
+  },
+  {
+    title: "Small Business Financial Model",
+    tag: "Excel Project",
+    status: "Planned",
+    desc: "I plan to build a practical Excel model to evaluate how a small business earns revenue, covers costs, and manages cash. The model will connect accounting and finance concepts to everyday operating decisions.",
+    tools: "Excel • Budgeting • Cash Flow • Scenario Analysis",
+    note: "Planned project; the model has not yet been built.",
+    deliverables: [
+      "Revenue and cost of goods sold assumptions",
+      "Labor, rent, and other overhead estimates",
+      "Gross margin and sales needed to cover costs",
+      "Cash flow projections",
+      "Base, upside, and downside scenarios",
     ],
   },
 ];
@@ -61,22 +77,22 @@ const Projects = () => {
       <div className="section-container">
         <SectionHeader
           title="Projects"
-          description="A planned business feasibility study, along with software projects I built earlier in college."
+          description="Planned projects about running a small business, alongside software projects I built earlier in college."
         />
 
-        {/* APPLIED BUSINESS PROJECT */}
+        {/* APPLIED BUSINESS PROJECTS */}
         <div className="mb-12">
           <div className="mb-5">
             <h3 className="text-xl font-semibold text-white">
-              Applied Business Project
+              Applied Business Projects
             </h3>
             <p className="text-base text-slate-300 mt-2 max-w-[850px] leading-relaxed">
-              The first step will be researching the idea before deciding
-              whether it makes sense to pursue further.
+              These planned projects will explore business feasibility and
+              financial decisions through research and clearly stated assumptions.
             </p>
           </div>
 
-          <div>
+          <div className="space-y-5">
             {appliedProjects.map((project) => (
               <PlanningProjectCard key={project.title} project={project} />
             ))}
@@ -93,7 +109,7 @@ const Projects = () => {
             <p className="text-base text-slate-300 mt-2 max-w-[850px] leading-relaxed">
               My technical background includes mobile development, Python,
               computer vision, and AI projects. These skills complement my
-              finance and accounting education and remain useful in my work.
+              accounting and finance education and remain useful in my work.
             </p>
           </div>
 
@@ -129,7 +145,7 @@ const PlanningProjectCard = ({ project }) => {
           </p>
           <p className="mt-5 text-sm font-semibold text-red-300">{project.tools}</p>
           <p className="mt-5 border-l-2 border-slate-600 pl-3 text-sm text-slate-400">
-            Proposed feasibility study; not currently an operating company.
+            {project.note}
           </p>
         </div>
 

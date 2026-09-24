@@ -22,14 +22,14 @@ const Home = () => {
           </h1>
 
           <h2 className="mt-4 max-w-[700px] text-xl sm:text-2xl lg:text-3xl font-semibold text-slate-200 leading-snug">
-            Finance and Accounting Student at Elmhurst University
+            Accounting &amp; Finance Student
           </h2>
 
           <p className="max-w-[680px] py-5 text-base sm:text-lg text-slate-200 leading-relaxed">
-            I currently intern part time at WGTaxLaw and work at Life Time. My
-            experience also includes sales development at Cyera and retail at
-            lululemon. I am interested in business ownership, investing,
-            leadership, and working with people.
+            Interested in privately owned businesses, business operations, and
+            entrepreneurship. I’m building experience across accounting, sales,
+            and customer service while learning how successful
+            businesses work from the inside.
           </p>
 
           <div className="mt-1 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">

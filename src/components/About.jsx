@@ -28,20 +28,22 @@ const About = () => {
           <div className="space-y-5 text-base leading-relaxed text-slate-200 sm:text-lg">
             <p>
               I earned my Associate in Arts from Harper College and am now a
-              junior at Elmhurst University studying finance and accounting. My
-              classes and internships are giving me experience with accounting,
-              finance, operations, and client work.
+              junior at Elmhurst University studying accounting and finance.
+              My work in accounting and tax, sales, and customer service has
+              helped me understand different parts of a business.
             </p>
             <p>
-              My long-term goals include owning a business, investing, leading
-              a team, and helping people. I am building the financial and
-              practical experience to prepare for those goals.
+              After college, I hope to build strong accounting and finance
+              experience within a privately owned company, contribute to its
+              success, and keep learning about operations, customers, employees,
+              and how business decisions are made.
             </p>
             <p>
-              I plan to evaluate an Italian deli and specialty food idea called
-              Gemelli with my brother through a finance, accounting, analytics,
-              and information systems feasibility study. It is a proposed
-              project, not an operating business.
+              Long term, I’m interested in owning and operating a small family
+              business, while still exploring which industry is the right fit.
+              Gemelli is a planned feasibility study of a small Italian specialty
+              food market. I want to use it to learn how to evaluate a business
+              idea before deciding whether to pursue it.
             </p>
             <p>
               Outside of school and work, I enjoy working out, traveling,

@@ -1,5 +1,3 @@
-// src/components/Work.jsx
-
 import React from "react";
 import Cyera from "../assets/cyera_logo.jpg";
 import lululemon from "../assets/lululemon_logo.jpg";
@@ -9,16 +7,17 @@ import SectionHeader from "./SectionHeader";
 const experiences = [
   {
     company: "WGTaxLaw",
-    role: "Part-Time Intern",
+    role: "Accounting & Tax Intern (Part time)",
     dates: "August 2026 – Present",
-    tag: "Accounting and tax support",
+    tag: "Accounting, tax, and small business experience",
     initials: "WG",
     current: true,
     bullets: [
+      "Use QuickBooks Online and QuickBooks Desktop in my accounting work.",
       "Enter transactions and help keep financial records organized.",
       "Work on bank reconciliations and learn how activity moves through the accounting process.",
       "Expect to begin helping with tax returns as the internship continues.",
-      "May also have the opportunity to learn about some of the firm’s legal work.",
+      "Learn how a small accounting and tax firm runs and supports its clients.",
     ],
   },
   {
@@ -27,25 +26,26 @@ const experiences = [
     logo: Cyera,
     location: "Chicago, IL",
     dates: "June 2026 – August 2026",
-    tag: "Sales development and account research",
+    tag: "Sales and customer acquisition",
     bullets: [
       "Prospected and qualified potential leads for the business development team.",
       "Built and updated prospect lists for outbound campaigns.",
       "Researched companies and buyer roles to help improve outreach.",
+      "Learned how prospecting, account research, and lead qualification support customer acquisition.",
     ],
   },
   {
     company: "Life Time",
-    role: "Life Cafe Team Member",
+    role: "LifeCafe Team Member",
     logo: LifeTime,
     location: "Schaumburg, IL",
     dates: "April 2024 – Present",
-    tag: "Customer service and daily operations",
+    tag: "Customer service and cafe operations",
     current: true,
     bullets: [
       "Serve Life Time members and prepare food and drink orders accurately.",
       "Keep the cafe clean, stocked, and organized during busy shifts.",
-      "Balance a regular work schedule with school and other responsibilities.",
+      "Work with teammates to keep orders moving and provide consistent service.",
     ],
   },
   {
@@ -58,7 +58,7 @@ const experiences = [
     bullets: [
       "Helped guests choose products based on fit, features, and how they planned to use them.",
       "Built product knowledge and learned how to make useful recommendations without being pushy.",
-      "Worked with the store team in a busy customer-service environment.",
+      "Worked with the store team to help customers during busy shifts.",
     ],
   },
 ];
@@ -69,7 +69,7 @@ const Experience = () => {
       <div className="section-container">
         <SectionHeader
           title="Experience"
-          description="I have worked in accounting, sales development, retail, and food service. Each role has given me a different view of how a business works."
+          description="From sales and customer acquisition to daily operations and accounting, each role has helped me understand a different part of how businesses serve customers and operate."
         />
 
         <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">

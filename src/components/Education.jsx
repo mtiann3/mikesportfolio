@@ -11,7 +11,7 @@ const educationItems = [
     location: "Elmhurst, IL",
     degree: "Bachelor of Science in Accounting; Second Major in Finance",
     dates: "Expected May 2028",
-    highlight: "Junior | Finance and Accounting",
+    highlight: "Junior | Accounting & Finance",
     coursework: [
       "Intermediate Accounting I",
       "Principles of Marketing",
@@ -55,7 +55,7 @@ const Education = () => {
       <div className="section-container">
         <SectionHeader
           title="Education"
-          description="I earned my associate degree at Harper College and transferred to Elmhurst University, where I am pursuing degrees in accounting and finance."
+          description="I earned my associate degree at Harper College and transferred to Elmhurst University, where I am studying accounting and finance."
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">

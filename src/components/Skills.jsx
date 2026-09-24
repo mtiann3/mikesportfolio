@@ -12,6 +12,8 @@ const skillGroups = [
     title: "Accounting & Business",
     icon: HiOutlineCalculator,
     skills: [
+      "QuickBooks Online",
+      "QuickBooks Desktop",
       "Accounting fundamentals",
       "Transaction entries",
       "Bank reconciliations",
